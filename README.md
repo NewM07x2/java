@@ -1,2 +1,2 @@
 # java
-dev java
+dev JavaScript
