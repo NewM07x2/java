@@ -1,0 +1,12 @@
+＜演習：Ex1_07_1＞
+以下、どのようなデータが画面に表示されるでしょう？
+プログラムを実行せずに予想してみましょう。
+
+inta = 100 ;
+double b = 1.5 ;
+String c = "7" ;
+double d = 1.2 ;
+System.out.println( Integer.parseInt( (int)( a + b ) + c ) + d );
+
+★答え★
+1018.2
