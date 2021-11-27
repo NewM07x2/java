@@ -14,31 +14,31 @@ public class Sample3 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
+      //コントロールの作成
       for(int i=0; i<bt.length; i++){
          for(int j=0; j<bt[i].length; j++){
             bt[i][j] = new Button(Integer.toString(i) + Integer.toString(j));
          }
       }
 
-      //�y�C���̍쐬
+      //ペインの作成
       GridPane gp = new GridPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       for(int i=0; i<bt.length; i++){
          for(int j=0; j<bt[i].length; j++){
             gp.add(bt[i][j], i, j);
          }
       }
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(gp, 300, 200);
 
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 }

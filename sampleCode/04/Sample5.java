@@ -7,6 +7,6 @@ class Sample5
 
       b = a++;
 
-      System.out.println("代入後にインクリメントしたのでbの値は" + b + "です。");
+      System.out.println("莉｣蜈･蠕後↓繧､繝ｳ繧ｯ繝ｪ繝｡繝ｳ繝医＠縺溘�ｮ縺ｧb縺ｮ蛟､縺ｯ" + b + "縺ｧ縺吶�");
    }
 }

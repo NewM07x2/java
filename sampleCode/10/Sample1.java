@@ -9,8 +9,8 @@ class Sample1
 
        int len = str.length();
 
-       System.out.println(str + "‚Ì1”Ô–Ú‚Ì•¶š‚Í" + ch1 + "‚Å‚·B");
-       System.out.println(str + "‚Ì2”Ô–Ú‚Ì•¶š‚Í" + ch2 + "‚Å‚·B");
-       System.out.println(str + "‚Ì’·‚³‚Í" + len + "‚Å‚·B");
+       System.out.println(str + "ã®1ç•ªç›®ã®æ–‡å­—ã¯" + ch1 + "ã§ã™ã€‚");
+       System.out.println(str + "ã®2ç•ªç›®ã®æ–‡å­—ã¯" + ch2 + "ã§ã™ã€‚");
+       System.out.println(str + "ã®é•·ã•ã¯" + len + "ã§ã™ã€‚");
    }
 }

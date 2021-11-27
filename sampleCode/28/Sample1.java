@@ -20,36 +20,36 @@ public class Sample1 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
+      //コントロールの作成
       tf = new TextField();
       wv = new WebView();
-      bt = new Button("�Ǎ�");
+      bt = new Button("読込");
 
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
       VBox vb = new VBox();
  
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       vb.getChildren().addAll(bt, tf);
 
       bp.setTop(vb);
       bp.setCenter(wv);
       
-      //�C�x���g�n���h���̓o�^
+      //イベントハンドラの登録
       bt.setOnAction(new SampleEventHandler());
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 600, 600);
       
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 
-   //�C�x���g�n���h���N���X
+   //イベントハンドラクラス
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

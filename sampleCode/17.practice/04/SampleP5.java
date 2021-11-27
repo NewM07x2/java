@@ -4,7 +4,7 @@ class SampleP5
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‰È–Ú1`5‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("ç§‘ç›®1ã€œ5ã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -22,7 +22,7 @@ class SampleP5
       sum += Integer.parseInt(str4);
       sum += Integer.parseInt(str5);
 
-      System.out.println("5‰È–Ú‚Ì‡Œv“_‚Í" + sum + "‚Å‚·B");
-      System.out.println("5‰È–Ú‚Ì•½‹Ï“_‚Í" + (sum /(double) 5) + "‚Å‚·B");
+      System.out.println("5ç§‘ç›®ã®åˆè¨ˆç‚¹ã¯" + sum + "ã§ã™ã€‚");
+      System.out.println("5ç§‘ç›®ã®å¹³å‡ç‚¹ã¯" + (sum /(double) 5) + "ã§ã™ã€‚");
    }
 }

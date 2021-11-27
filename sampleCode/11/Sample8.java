@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    protected int num;
@@ -8,7 +8,7 @@ class Car
    {
       num = 0;
       gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
 }
 
@@ -25,7 +25,7 @@ class Sample8
       boolean bl1 = car1.equals(car2);
       boolean bl2 = car1.equals(car3);
 
-      System.out.println("car1‚Æcar2‚ª“¯‚¶‚©’²‚×‚½‚Æ‚±‚ë" + bl1 + "‚Å‚µ‚½B");
-      System.out.println("car1‚Æcar3‚ª“¯‚¶‚©’²‚×‚½‚Æ‚±‚ë" + bl2 + "‚Å‚µ‚½B");
+      System.out.println("car1ã¨car2ãŒåŒã˜ã‹èª¿ã¹ãŸã¨ã“ã‚" + bl1 + "ã§ã—ãŸã€‚");
+      System.out.println("car1ã¨car3ãŒåŒã˜ã‹èª¿ã¹ãŸã¨ã“ã‚" + bl2 + "ã§ã—ãŸã€‚");
    }
 }

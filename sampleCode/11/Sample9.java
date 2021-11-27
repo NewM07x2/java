@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    protected int num;
@@ -8,10 +8,10 @@ class Car
    {
       num = 0;
       gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
 }
-//ƒŒ[ƒVƒ“ƒOƒJ[ƒNƒ‰ƒX
+//ãƒ¬ãƒ¼ã‚·ãƒ³ã‚°ã‚«ãƒ¼ã‚¯ãƒ©ã‚¹
 class RacingCar extends Car
 {
    private int course;
@@ -19,7 +19,7 @@ class RacingCar extends Car
    public RacingCar()
    {
       course = 0;
-      System.out.println("ƒŒ[ƒVƒ“ƒOƒJ[‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒ¬ãƒ¼ã‚·ãƒ³ã‚°ã‚«ãƒ¼ã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
 }
 
@@ -35,7 +35,7 @@ class Sample9
 
       for(int i=0; i<cars.length; i++){
           Class cl = cars[i].getClass();
-          System.out.println((i+1) + "”Ô–Ú‚ÌƒIƒuƒWƒFƒNƒg‚ÌƒNƒ‰ƒX‚Í" + cl + "‚Å‚·B");
+          System.out.println((i+1) + "ç•ªç›®ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¯ãƒ©ã‚¹ã¯" + cl + "ã§ã™ã€‚");
       }
    }
 }

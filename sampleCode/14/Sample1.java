@@ -5,10 +5,10 @@ class Sample1
       int[] test;
       test = new int[5];
 
-      System.out.println("test[10]‚É’l‚ğ‘ã“ü‚µ‚Ü‚·B");
+      System.out.println("test[10]ã«å€¤ã‚’ä»£å…¥ã—ã¾ã™ã€‚");
 
       test[10] = 80;
-      System.out.println("test[10]‚É80‚ğ‘ã“ü‚µ‚Ü‚µ‚½B");
-      System.out.println("–³–I—¹‚µ‚Ü‚µ‚½B");
+      System.out.println("test[10]ã«80ã‚’ä»£å…¥ã—ã¾ã—ãŸã€‚");
+      System.out.println("ç„¡äº‹çµ‚äº†ã—ã¾ã—ãŸã€‚");
    }
 }

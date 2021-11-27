@@ -5,7 +5,7 @@ class Sample10
       int d = 2;
       double pi = 3.14;
 
-      System.out.println("’¼Œa‚ª" + d + "ƒZƒ“ƒ`‚Ì‰~‚Ì");
-      System.out.println("‰~Žü‚Í" + (d*pi) + "ƒZƒ“ƒ`‚Å‚·B");
+      System.out.println("ç›´å¾„ãŒ" + d + "ã‚»ãƒ³ãƒã®å††ã®");
+      System.out.println("å††å‘¨ã¯" + (d*pi) + "ã‚»ãƒ³ãƒã§ã™ã€‚");
    }
 }

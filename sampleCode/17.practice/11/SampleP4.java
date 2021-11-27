@@ -7,17 +7,17 @@ class Car
    {
       num = 0;
       gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void setCar(int n, double g)
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
    }
    public String toString()
    {
-      String str = "ƒiƒ“ƒo[" + num + "ƒKƒ\ƒŠƒ“—Ê" + gas + "‚ÌÔ";
+      String str = "ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas + "ã®è»Š";
       return str;
    }
 }
@@ -29,6 +29,6 @@ class SampleP4
       Car car1 = new Car();
       car1.setCar(1234, 20.5);
 
-      System.out.println(car1 + "‚Å‚·B"); 
+      System.out.println(car1 + "ã§ã™ã€‚"); 
    }
 }

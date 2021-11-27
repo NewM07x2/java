@@ -19,7 +19,7 @@ public class Sample7 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
+      //コントロールの作成
       File fl = new File(".");
       File[] fls = fl.listFiles(new SampleFileFilter());
 
@@ -34,25 +34,25 @@ public class Sample7 extends Application
          tp[i] = new TitledPane(fls[i].getName(), iv[i]);
       }
 
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       ac.getPanes().addAll(tp);
       bp.setCenter(ac);
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 300, 200);
 
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 
-   //�t�B���^�N���X
+   //フィルタクラス
    class SampleFileFilter implements FilenameFilter
    {
       public boolean accept(File f, String n)

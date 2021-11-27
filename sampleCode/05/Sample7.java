@@ -4,8 +4,8 @@ class Sample7
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‚ ‚È‚½‚Í’j«‚Å‚·‚©H");
-      System.out.println("Y‚Ü‚½‚ÍN‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("ã‚ãªãŸã¯ç”·æ€§ã§ã™ã‹ï¼Ÿ");
+      System.out.println("Yã¾ãŸã¯Nã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -14,13 +14,13 @@ class Sample7
       char res = str.charAt(0);
 
       if(res == 'Y' || res == 'y'){
-         System.out.println("‚ ‚È‚½‚Í’j«‚Å‚·‚ËB");
+         System.out.println("ã‚ãªãŸã¯ç”·æ€§ã§ã™ã­ã€‚");
       }
       else if(res == 'N' || res == 'n'){
-         System.out.println("‚ ‚È‚½‚Í—«‚Å‚·‚ËB");
+         System.out.println("ã‚ãªãŸã¯å¥³æ€§ã§ã™ã­ã€‚");
       }
       else{
-         System.out.println("Y‚Ü‚½‚ÍN‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+         System.out.println("Yã¾ãŸã¯Nã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
       }
    }
 }

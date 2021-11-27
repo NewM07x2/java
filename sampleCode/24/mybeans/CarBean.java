@@ -21,6 +21,6 @@ public class CarBean implements Serializable
    }
    public void makeCardata()
    {
-      cardata = "ŽÔŽí:" + carname;
+      cardata = "è»Šç¨®:" + carname;
    }
 }

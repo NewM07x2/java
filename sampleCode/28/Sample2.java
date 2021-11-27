@@ -21,17 +21,17 @@ public class Sample2 extends Application
       try{
          InetAddress ia = InetAddress.getLocalHost();
 
-         //�R���g���[���̍쐬
-         lb1 = new Label("�z�X�g��");
-         lb2 = new Label("IP�A�h���X");
+         //コントロールの作成
+         lb1 = new Label("ホスト名");
+         lb2 = new Label("IPアドレス");
          tf1 = new TextField(ia.getHostName());    
          tf2 = new TextField(ia.getHostAddress()); 
 
-         //�y�C���̍쐬
+         //ペインの作成
          BorderPane bp = new BorderPane();
          VBox vb = new VBox();
 
-         //�y�C���ւ̒ǉ�
+         //ペインへの追加
          vb.getChildren().add(lb1);
          vb.getChildren().add(tf1);
          vb.getChildren().add(lb2);
@@ -39,14 +39,14 @@ public class Sample2 extends Application
 
          bp.setCenter(vb);
 
-         //�V�[���̍쐬
+         //シーンの作成
          Scene sc = new Scene(bp, 300, 200);
       
-         //�X�e�[�W�ւ̒ǉ�
+         //ステージへの追加
          stage.setScene(sc);
 
-         //�X�e�[�W�̕\��
-         stage.setTitle("�T���v��");
+         //ステージの表示
+         stage.setTitle("サンプル");
          stage.show();
       }
       catch(Exception e){

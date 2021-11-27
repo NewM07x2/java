@@ -5,31 +5,31 @@ public class SampleP2
    public static void main(String[] args)
    {
       if(args.length != 3){
-         System.out.println("ƒpƒ‰ƒ[ƒ^‚Ì”‚ªˆá‚¢‚Ü‚·B");
+         System.out.println("ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ•°ãŒé•ã„ã¾ã™ã€‚");
          System.exit(1);
       }
 
       try{
-         //Ú‘±‚Ì€”õ
+         //æ¥ç¶šã®æº–å‚™
          String url = "jdbc:derby:fooddb;create=true";
          String usr = "";
          String pw = "";
 
-         //ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±
+         //ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¸ã®æ¥ç¶š
          Connection cn = DriverManager.getConnection(url, usr, pw);
 
-         //–â‚¢‡‚í‚¹‚Ì€”õ
+         //å•ã„åˆã‚ã›ã®æº–å‚™
          Statement st = cn.createStatement();
-         String qry1 = "INSERT INTO ‰Ê•¨•\ VALUES (" + args[0] + ", '"
+         String qry1 = "INSERT INTO æœç‰©è¡¨ VALUES (" + args[0] + ", '"
                                                      + args[1] + "','"
                                                      + args[2] + "')";
-         String qry2 = "SELECT * FROM ‰Ê•¨•\";
+         String qry2 = "SELECT * FROM æœç‰©è¡¨";
 
-         //–â‚¢‡‚í‚¹
+         //å•ã„åˆã‚ã›
          st.executeUpdate(qry1);
          ResultSet rs = st.executeQuery(qry2);
 
-         //ƒf[ƒ^‚Ìæ“¾
+         //ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          ResultSetMetaData rm = rs.getMetaData();
          int cnum = rm.getColumnCount();
 
@@ -40,7 +40,7 @@ public class SampleP2
             System.out.println("");
          }
         
-         //Ú‘±‚ÌƒNƒ[ƒY
+         //æ¥ç¶šã®ã‚¯ãƒ­ãƒ¼ã‚º
          rs.close();
          st.close();
          cn.close();

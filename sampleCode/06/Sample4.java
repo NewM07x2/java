@@ -4,7 +4,7 @@ class Sample4
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‚¢‚­‚Â‚Ü‚Å‚Ì‡Œv‚ğ‹‚ß‚Ü‚·‚©H");
+      System.out.println("ã„ãã¤ã¾ã§ã®åˆè¨ˆã‚’æ±‚ã‚ã¾ã™ã‹ï¼Ÿ");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -17,6 +17,6 @@ class Sample4
          sum += i;
       }
 
-      System.out.println("1‚©‚ç" + num + "‚Ü‚Å‚Ì‡Œv‚Í"+ sum + "‚Å‚·B");
+      System.out.println("1ã‹ã‚‰" + num + "ã¾ã§ã®åˆè¨ˆã¯"+ sum + "ã§ã™ã€‚");
    }
 }

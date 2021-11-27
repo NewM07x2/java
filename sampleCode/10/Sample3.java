@@ -4,14 +4,14 @@ class Sample3
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("•¶š—ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æ–‡å­—åˆ—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
 
       String str1 = br.readLine();
 
-      System.out.println("ŒŸõ•¶š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æ¤œç´¢æ–‡å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       String str2 = br.readLine();
       char ch = str2.charAt(0);
@@ -19,8 +19,8 @@ class Sample3
       int num = str1.indexOf(ch);
 
       if(num != -1)
-         System.out.println(str1 + "‚Ì" + (num+1) + "”Ô–Ú‚Éu" + ch +"v‚ª‚İ‚Â‚©‚è‚Ü‚µ‚½B");
+         System.out.println(str1 + "ã®" + (num+1) + "ç•ªç›®ã«ã€Œ" + ch +"ã€ãŒã¿ã¤ã‹ã‚Šã¾ã—ãŸã€‚");
       else
-         System.out.println(str1 + "‚Éu" + ch + "v‚Í‚ ‚è‚Ü‚¹‚ñB");
+         System.out.println(str1 + "ã«ã€Œ" + ch + "ã€ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
    }
 }

@@ -15,17 +15,17 @@ public class Sample1 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
+      //コントロールの作成
       bt[0] = new Button("Top");
       bt[1] = new Button("Bottom");
       bt[2] = new Button("Center");
       bt[3] = new Button("Left");
       bt[4] = new Button("Right");
 
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       bp.setTop(bt[0]);
       bp.setBottom(bt[1]);
       bp.setCenter(bt[2]);
@@ -36,14 +36,14 @@ public class Sample1 extends Application
          bp.setAlignment(bt[i], Pos.CENTER);
       }
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 300, 200);
 
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 }

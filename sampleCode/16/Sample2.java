@@ -11,9 +11,9 @@ public class Sample2 extends Frame
    }
    public Sample2()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
-      lb = new Label("‚æ‚¤‚±‚»B");
+      lb = new Label("ã‚ˆã†ã“ãã€‚");
 
       add(lb);
 

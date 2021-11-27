@@ -13,7 +13,7 @@ public class SampleP5 extends Frame implements Runnable
    }
    public SampleP5()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
    
       num = 0;
       x = 0;
@@ -40,7 +40,7 @@ public class SampleP5 extends Frame implements Runnable
    }
    public void paint(Graphics g)
    {
-      String str = num + "‚Å‚·B";
+      String str = num + "ã§ã™ã€‚";
       g.drawString(str, x+100, 100);
    }
 

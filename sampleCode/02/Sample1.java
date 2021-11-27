@@ -1,9 +1,9 @@
-//‰æ–Ê‚É•¶š‚ğo—Í‚·‚éƒR[ƒh
+//ç”»é¢ã«æ–‡å­—ã‚’å‡ºåŠ›ã™ã‚‹ã‚³ãƒ¼ãƒ‰
 class Sample1
 {
    public static void main(String[] args)
    {
-      System.out.println("‚æ‚¤‚±‚»Java‚Ö!");
-      System.out.println("Java‚ğ‚Í‚¶‚ß‚Ü‚µ‚å‚¤!");
+      System.out.println("ã‚ˆã†ã“ãJavaã¸!");
+      System.out.println("Javaã‚’ã¯ã˜ã‚ã¾ã—ã‚‡ã†!");
    }
 }

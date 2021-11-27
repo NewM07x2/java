@@ -20,14 +20,14 @@ public class SampleP1 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb  = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
-      rb1 = new RadioButton("‰©");
-      rb2 = new RadioButton("Ô");
-      rb3 = new RadioButton("Â");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb  = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
+      rb1 = new RadioButton("é»„");
+      rb2 = new RadioButton("èµ¤");
+      rb3 = new RadioButton("é’");
       tg  = new ToggleGroup();
 
-      //ƒgƒOƒ‹ƒOƒ‹[ƒv‚Ö‚Ì’Ç‰Á
+      //ãƒˆã‚°ãƒ«ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®è¿½åŠ 
       rb1.setToggleGroup(tg);
       rb2.setToggleGroup(tg);
       rb3.setToggleGroup(tg);
@@ -36,11 +36,11 @@ public class SampleP1 extends Application
       lb.setBackground(new Background
                       (new BackgroundFill(Color.YELLOW, null, null)));
       
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
       HBox hb = new HBox();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       hb.getChildren().add(rb1);
       hb.getChildren().add(rb2);
       hb.getChildren().add(rb3);
@@ -49,23 +49,23 @@ public class SampleP1 extends Application
       bp.setTop(lb);
       bp.setCenter(hb);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       rb1.setOnAction(new SampleEventHandler());
       rb2.setOnAction(new SampleEventHandler());
       rb3.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

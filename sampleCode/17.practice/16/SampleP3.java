@@ -13,7 +13,7 @@ public class SampleP3 extends Frame
    }
    public SampleP3()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       Toolkit tk = getToolkit();
       im = tk.getImage("Image.jpg");

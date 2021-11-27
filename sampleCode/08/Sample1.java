@@ -1,4 +1,4 @@
-//�ԃN���X
+//車クラス
 class Car
 {
    int num;
@@ -15,7 +15,7 @@ class Sample1
       car1.num = 1234;
       car1.gas = 20.5;
 
-      System.out.println("�Ԃ̃i���o�[��" + car1.num + "�ł��B");
-      System.out.println("�K�\�����ʂ�" + car1.gas + "�ł��B");
+      System.out.println("車のナンバーは" + car1.num + "です。");
+      System.out.println("ガソリン量は" + car1.gas + "です。");
    }
 }

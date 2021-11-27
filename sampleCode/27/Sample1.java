@@ -9,23 +9,23 @@ public class Sample1
 {
    public static void main(String[] args) throws Exception
    {
-      //DOM‚Ì€”õ‚ğ‚·‚é
+      //DOMã®æº–å‚™ã‚’ã™ã‚‹
       DocumentBuilderFactory dbf
          = DocumentBuilderFactory.newInstance();
       DocumentBuilder db
          = dbf.newDocumentBuilder();
 
-      //•¶‘‚ğ“Ç‚İ‚Ş
+      //æ–‡æ›¸ã‚’èª­ã¿è¾¼ã‚€
       Document doc
          = db.parse(new FileInputStream("Sample.xml"));
 
-      //•¶‘‚ğ‘‚«o‚·
+      //æ–‡æ›¸ã‚’æ›¸ãå‡ºã™
       TransformerFactory tff
          = TransformerFactory.newInstance();
       Transformer tf
          = tff.newTransformer();
       tf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
       tf.transform(new DOMSource(doc), new StreamResult("result.xml"));
-      System.out.println("result.xml‚Éo—Í‚µ‚Ü‚µ‚½B");
+      System.out.println("result.xmlã«å‡ºåŠ›ã—ã¾ã—ãŸã€‚");
    }
 }

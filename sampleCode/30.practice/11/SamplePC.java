@@ -22,19 +22,19 @@ public class SamplePC extends Application
    public void start(Stage stage)throws Exception
    {
       try{
-         //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-         lb1 = new Label("ƒzƒXƒg");
-         lb2 = new Label("ƒ|[ƒg");
+         //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+         lb1 = new Label("ãƒ›ã‚¹ãƒˆ");
+         lb2 = new Label("ãƒãƒ¼ãƒˆ");
          tf1 = new TextField();
          tf2 = new TextField();
          ta = new TextArea();
-         bt = new Button("Ú‘±");
+         bt = new Button("æ¥ç¶š");
 
-         //ƒyƒCƒ“‚Ìì¬
+         //ãƒšã‚¤ãƒ³ã®ä½œæˆ
          GridPane gp = new GridPane();
          BorderPane bp = new BorderPane();
 
-         //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+         //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
          gp.add(lb1, 0, 0);
          gp.add(lb2, 0, 1);
          gp.add(tf1, 1, 0);
@@ -43,17 +43,17 @@ public class SamplePC extends Application
          bp.setCenter(ta);
          bp.setBottom(bt);
 
-         //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+         //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
          bt.setOnAction(new SampleEventHandler());
 
-         //ƒV[ƒ“‚Ìì¬
+         //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
          Scene sc = new Scene(bp, 300, 200);
 
-         //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+         //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
          stage.setScene(sc);
 
-         //ƒXƒe[ƒW‚Ì•\¦
-         stage.setTitle("ƒTƒ“ƒvƒ‹");
+         //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+         stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
          stage.show();
       }
       catch(Exception e){
@@ -61,7 +61,7 @@ public class SamplePC extends Application
       }
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

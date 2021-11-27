@@ -5,25 +5,25 @@ public class Sample1
    public static void main(String args[])
    {
       try{
-         //Ú‘±‚Ì€”õ
+         //æ¥ç¶šã®æº–å‚™
          String url = "jdbc:derby:cardb;create=true";
          String usr = "";
          String pw = "";
 
-         //ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±
+         //ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¸ã®æ¥ç¶š
          Connection cn = DriverManager.getConnection(url, usr, pw);
 
-         //–â‚¢‡‚í‚¹‚Ì€”õ
+         //å•ã„åˆã‚ã›ã®æº–å‚™
          DatabaseMetaData dm = cn.getMetaData();
-         ResultSet tb = dm.getTables(null, null, "Ô•\", null);
+         ResultSet tb = dm.getTables(null, null, "è»Šè¡¨", null);
 
          Statement st = cn.createStatement();
 
-         String qry1 = "CREATE TABLE Ô•\(”Ô† int, –¼‘O varchar(50))";
-         String[] qry2 = {"INSERT INTO Ô•\ VALUES (2, 'æ—pÔ')",
-                          "INSERT INTO Ô•\ VALUES (3, 'ƒI[ƒvƒ“ƒJ[')",
-                          "INSERT INTO Ô•\ VALUES (4, 'ƒgƒ‰ƒbƒN')"};
-         String qry3 = "SELECT * FROM Ô•\";
+         String qry1 = "CREATE TABLE è»Šè¡¨(ç•ªå· int, åå‰ varchar(50))";
+         String[] qry2 = {"INSERT INTO è»Šè¡¨ VALUES (2, 'ä¹—ç”¨è»Š')",
+                          "INSERT INTO è»Šè¡¨ VALUES (3, 'ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼')",
+                          "INSERT INTO è»Šè¡¨ VALUES (4, 'ãƒˆãƒ©ãƒƒã‚¯')"};
+         String qry3 = "SELECT * FROM è»Šè¡¨";
 
          if(!tb.next()){
             st.executeUpdate(qry1);
@@ -32,10 +32,10 @@ public class Sample1
             }
          }        
 
-         //–â‚¢‡‚í‚¹
+         //å•ã„åˆã‚ã›
          ResultSet rs = st.executeQuery(qry3);
 
-         //ƒf[ƒ^‚Ìæ“¾
+         //ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          ResultSetMetaData rm = rs.getMetaData();
          int cnum = rm.getColumnCount();
          while(rs.next()){
@@ -45,7 +45,7 @@ public class Sample1
             System.out.println("");
          }
 
-         //Ú‘±‚ÌƒNƒ[ƒY
+         //æ¥ç¶šã®ã‚¯ãƒ­ãƒ¼ã‚º
          rs.close();
          st.close();
          cn.close();

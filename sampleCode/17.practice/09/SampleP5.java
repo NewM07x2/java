@@ -45,7 +45,7 @@ class SampleP5
       int px1 = p1.getX();
       int py1 = p1.getY();
       
-      System.out.println("p1‚ÌXÀ•W‚Í" + px1 + "YÀ•W‚Í" + py1 + "‚Å‚µ‚½B");
+      System.out.println("p1ã®Xåº§æ¨™ã¯" + px1 + "Yåº§æ¨™ã¯" + py1 + "ã§ã—ãŸã€‚");
 
       MyPoint p2;
       p2 = new MyPoint(20,10);
@@ -53,6 +53,6 @@ class SampleP5
       int px2 = p2.getX();
       int py2 = p2.getY();
 
-      System.out.println("p2‚ÌXÀ•W‚Í" + px2 + "YÀ•W‚Í" + py2 + "‚Å‚µ‚½B");
+      System.out.println("p2ã®Xåº§æ¨™ã¯" + px2 + "Yåº§æ¨™ã¯" + py2 + "ã§ã—ãŸã€‚");
    }
 }

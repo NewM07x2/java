@@ -4,7 +4,7 @@ class SampleP4
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("OŠpŒ`‚Ì‚‚³‚Æ’ê•Ó‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("ä¸‰è§’å½¢ã®é«˜ã•ã¨åº•è¾ºã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -15,6 +15,6 @@ class SampleP4
       double height = Integer.parseInt(str1);
       double width = Integer.parseInt(str2);
 
-      System.out.println("OŠpŒ`‚Ì–ÊÏ‚Í" + (height * width /(double) 2)+ "‚Å‚·B");
+      System.out.println("ä¸‰è§’å½¢ã®é¢ç©ã¯" + (height * width /(double) 2)+ "ã§ã™ã€‚");
    }
 }

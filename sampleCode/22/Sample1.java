@@ -20,45 +20,45 @@ public class Sample1 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
       cb = new ComboBox<String>();
       
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìİ’è
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®è¨­å®š
       ObservableList<String> ol = 
-         FXCollections.observableArrayList("æ—pÔ", "ƒgƒ‰ƒbƒN", "ƒI[ƒvƒ“ƒJ[",
-                                           "ƒ^ƒNƒV[", "ƒXƒ|[ƒcƒJ[", "ƒ~ƒjƒJ[");
+         FXCollections.observableArrayList("ä¹—ç”¨è»Š", "ãƒˆãƒ©ãƒƒã‚¯", "ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼",
+                                           "ã‚¿ã‚¯ã‚·ãƒ¼", "ã‚¹ãƒãƒ¼ãƒ„ã‚«ãƒ¼", "ãƒŸãƒ‹ã‚«ãƒ¼");
       cb.setItems(ol);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(lb);
       bp.setCenter(cb);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       cb.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
       {
          ComboBox tmp = (ComboBox) e.getSource();
          String str = tmp.getValue().toString();
-         lb.setText(str + "‚Å‚·‚ËB");
+         lb.setText(str + "ã§ã™ã­ã€‚");
       }
    }
 }

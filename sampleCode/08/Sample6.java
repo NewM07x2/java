@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    int num;
@@ -6,13 +6,13 @@ class Car
 
    int getNum()
    {
-      System.out.println("ƒiƒ“ƒo[‚ğ’²‚×‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’èª¿ã¹ã¾ã—ãŸã€‚");
       return num;
    }
 
    double getGas()
    {
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚ğ’²‚×‚Ü‚µ‚½B");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã‚’èª¿ã¹ã¾ã—ãŸã€‚");
       return gas;
    }
 
@@ -20,13 +20,13 @@ class Car
    {
       num = n;
       gas = g;
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
    }
 
    void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
 }
 
@@ -41,7 +41,7 @@ class Sample6
       int number = car1.getNum();
       double gasoline = car1.getGas();
 
-      System.out.println("ƒTƒ“ƒvƒ‹‚©‚çÔ‚ğ’²‚×‚½‚Æ‚±‚ë");
-      System.out.println("ƒiƒ“ƒo[‚Í"+ number + "ƒKƒ\ƒŠƒ“—Ê‚Í" + gasoline + "‚Å‚µ‚½B");
+      System.out.println("ã‚µãƒ³ãƒ—ãƒ«ã‹ã‚‰è»Šã‚’èª¿ã¹ãŸã¨ã“ã‚");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼ã¯"+ number + "ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gasoline + "ã§ã—ãŸã€‚");
    }
 }

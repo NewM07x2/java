@@ -10,25 +10,25 @@ public class Sample1 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒv‚Ìİ’è
+         //ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒ—ã®è¨­å®š
          response.setContentType("text/html; charset=UTF-8");
 
-         //‚Ìæ“¾
+         //æ™‚åˆ»ã®å–å¾—
          Date dt = new Date(); 
          
-         //HTML•¶‘‚Ì‘‚«o‚µ
+         //HTMLæ–‡æ›¸ã®æ›¸ãå‡ºã—
          PrintWriter pw = response.getWriter();
          pw.println("<!DOCTYPE html><html>\n" +
-                    "<head><title>ƒTƒ“ƒvƒ‹</title></head>\n" +
+                    "<head><title>ã‚µãƒ³ãƒ—ãƒ«</title></head>\n" +
                     "<body><div style=\"text-align: center;\">\n" +
-                    "<h2>‚æ‚¤‚±‚»</h2>" +
+                    "<h2>ã‚ˆã†ã“ã</h2>" +
                     "<hr/>\n" +
-                    "¡" + dt + "‚Å‚·B<br/>\n" +
-                    "‚¨‘I‚Ñ‚­‚¾‚³‚¢B<br/>\n" +
+                    "ä»Š" + dt + "ã§ã™ã€‚<br/>\n" +
+                    "ãŠé¸ã³ãã ã•ã„ã€‚<br/>\n" +
                     "<br/>\n" +
-                    "<a href=\"../car1.html\">æ—pÔ</a><br/>\n" +
-                    "<a href=\"../car2.html\">ƒgƒ‰ƒbƒN</a><br/>\n" +
-                    "<a href=\"../car3.html\">ƒI[ƒvƒ“ƒJ[</a><br/>\n" +
+                    "<a href=\"../car1.html\">ä¹—ç”¨è»Š</a><br/>\n" +
+                    "<a href=\"../car2.html\">ãƒˆãƒ©ãƒƒã‚¯</a><br/>\n" +
+                    "<a href=\"../car3.html\">ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼</a><br/>\n" +
                     "</div></body>\n" +
                     "</html>\n");
        }

@@ -9,24 +9,24 @@ public class Sample2
 {
    public static void main(String[] args) throws Exception
    {
-      //DOM‚Ì€”õ‚ğ‚·‚é
+      //DOMã®æº–å‚™ã‚’ã™ã‚‹
       DocumentBuilderFactory dbf
          = DocumentBuilderFactory.newInstance();
       DocumentBuilder db
          = dbf.newDocumentBuilder();
 
-      //•¶‘‚ğ“Ç‚İ‚Ş
+      //æ–‡æ›¸ã‚’èª­ã¿è¾¼ã‚€
       Document doc
          = db.parse(new FileInputStream("Sample.xml"));
 
-      //•¶‘‚ğV‹Kì¬‚·‚é
+      //æ–‡æ›¸ã‚’æ–°è¦ä½œæˆã™ã‚‹
       Document doc2 = db.newDocument();
 
-      //ƒ‹[ƒg—v‘f‚ğ’Ç‰Á‚·‚é
+      //ãƒ«ãƒ¼ãƒˆè¦ç´ ã‚’è¿½åŠ ã™ã‚‹
       Element root = doc2.createElement("cars");
       doc2.appendChild(root);
 
-      //—v‘f‚ğæ‚èo‚·
+      //è¦ç´ ã‚’å–ã‚Šå‡ºã™
       NodeList lst = doc.getElementsByTagName("name");
 
       for(int i=0; i<lst.getLength(); i++){
@@ -42,13 +42,13 @@ public class Sample2
          }
       }
 
-      //•¶‘‚ğ‘‚«o‚·
+      //æ–‡æ›¸ã‚’æ›¸ãå‡ºã™
       TransformerFactory tff
          = TransformerFactory.newInstance();
       Transformer tf
          = tff.newTransformer();
       tf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
       tf.transform(new DOMSource(doc2), new StreamResult("result.xml"));
-      System.out.println("result.xml‚Éo—Í‚µ‚Ü‚µ‚½B");
+      System.out.println("result.xmlã«å‡ºåŠ›ã—ã¾ã—ãŸã€‚");
    }
 }

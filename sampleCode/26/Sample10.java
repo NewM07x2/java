@@ -19,7 +19,7 @@ public class Sample10 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
       File fl = new File(".");
       File[] fls = fl.listFiles(new SampleFileFilter());
       String[] st = new String[fls.length];
@@ -29,30 +29,30 @@ public class Sample10 extends Application
       ol = FXCollections.observableArrayList(st);
 
       lv = new ListView<String>(ol);
-      bt = new Button("‹N“®");
+      bt = new Button("èµ·å‹•");
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setCenter(lv);
       bp.setBottom(bt);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       bt.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
@@ -62,12 +62,12 @@ public class Sample10 extends Application
             dp.open(new File(lv.getSelectionModel().getSelectedItem()));
          }
          catch(IOException ex){
-            System.out.println("‹N“®‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B");
+            System.out.println("èµ·å‹•ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚");
          }
       }
    }
 
-   //ƒtƒBƒ‹ƒ^ƒNƒ‰ƒX
+   //ãƒ•ã‚£ãƒ«ã‚¿ã‚¯ãƒ©ã‚¹
    class SampleFileFilter implements FileFilter
    {
       public boolean accept(File f)

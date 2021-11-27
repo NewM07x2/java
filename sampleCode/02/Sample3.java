@@ -3,7 +3,7 @@ class Sample3
    public static void main(String[] args)
    {
       System.out.println('A');
-      System.out.println("‚æ‚¤‚±‚»Java‚ÖI");
+      System.out.println("ã‚ˆã†ã“ãJavaã¸ï¼");
       System.out.println(123);
    }
 }

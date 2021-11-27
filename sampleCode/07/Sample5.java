@@ -4,25 +4,25 @@ public class Sample5
    {
       int[] test1;
       test1 = new int[3];
-      System.out.println("test1‚ğéŒ¾‚µ‚Ü‚µ‚½B");
-      System.out.println("”z—ñ—v‘f‚ğŠm•Û‚µ‚Ü‚µ‚½B");
+      System.out.println("test1ã‚’å®£è¨€ã—ã¾ã—ãŸã€‚");
+      System.out.println("é…åˆ—è¦ç´ ã‚’ç¢ºä¿ã—ã¾ã—ãŸã€‚");
 
       test1[0] = 80;
       test1[1] = 60;
       test1[2] = 22;
 
       int[] test2;
-      System.out.println("test2‚ğéŒ¾‚µ‚Ü‚µ‚½B");
+      System.out.println("test2ã‚’å®£è¨€ã—ã¾ã—ãŸã€‚");
 
       test2 = test1;
-      System.out.println("test2‚Étest1‚ğ‘ã“ü‚µ‚Ü‚µ‚½B");
+      System.out.println("test2ã«test1ã‚’ä»£å…¥ã—ã¾ã—ãŸã€‚");
 
       for(int i=0; i< test1.length; i++){
-         System.out.println("test1‚ª‚³‚·" + (i+1) + "”Ô–Ú‚Ìl‚Ì“_”‚Í" + test1[i] + "‚Å‚·B");
+         System.out.println("test1ãŒã•ã™" + (i+1) + "ç•ªç›®ã®äººã®ç‚¹æ•°ã¯" + test1[i] + "ã§ã™ã€‚");
       }
 
       for(int i=0; i< test2.length; i++){
-         System.out.println("test2‚ª‚³‚·" + (i+1) + "”Ô–Ú‚Ìl‚Ì“_”‚Í" + test2[i] + "‚Å‚·B");
+         System.out.println("test2ãŒã•ã™" + (i+1) + "ç•ªç›®ã®äººã®ç‚¹æ•°ã¯" + test2[i] + "ã§ã™ã€‚");
       }
    }
 }

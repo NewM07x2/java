@@ -4,7 +4,7 @@ class SampleP3
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‚ ‚È‚½‚Í‰½Î‚Å‚·‚©H");
+      System.out.println("ã‚ãªãŸã¯ä½•æ­³ã§ã™ã‹ï¼Ÿ");
 
       BufferedReader br =
        new BufferedReader(new InputStreamReader(System.in));
@@ -13,6 +13,6 @@ class SampleP3
 
       int num = Integer.parseInt(str);
 
-      System.out.println("‚ ‚È‚½‚Í" + num + "Î‚Å‚·B");
+      System.out.println("ã‚ãªãŸã¯" + num + "æ­³ã§ã™ã€‚");
    }
 }

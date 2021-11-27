@@ -14,27 +14,27 @@ public class Sample2 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
+      //コントロールの作成
       for(int i=0; i<bt.length; i++){
          bt[i] = new Button(Integer.toString(i));
       }
 
-      //�y�C���̍쐬
+      //ペインの作成
       FlowPane fp = new FlowPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       for(int i=0; i<bt.length; i++){
          fp.getChildren().add(bt[i]);
       }
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(fp, 300, 100);
 
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 }

@@ -18,49 +18,49 @@ public class Sample8 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒ|[ƒlƒ“ƒg‚Ìì¬
+      //ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã®ä½œæˆ
       lb = new Label();
       bt = new Button();
       
-      //ƒRƒ“ƒ|[ƒlƒ“ƒg‚Ìİ’è
-      lb.setText("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
-      bt.setText("w“ü");
+      //ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã®è¨­å®š
+      lb.setText("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
+      bt.setText("è³¼å…¥");
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(lb);
       bp.setCenter(bt);
       
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       bt.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
       {
          Alert al1 = new Alert(Alert.AlertType.CONFIRMATION);
-         al1.setTitle("Šm”F"); 
-         al1.getDialogPane().setHeaderText("–{“–‚Éw“ü‚µ‚Ü‚·‚©H");
+         al1.setTitle("ç¢ºèª"); 
+         al1.getDialogPane().setHeaderText("æœ¬å½“ã«è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ");
          Optional<ButtonType> res = al1.showAndWait();
 
          if(res.get() == ButtonType.OK){
             Alert al2 = new Alert(Alert.AlertType.INFORMATION);
-            al2.setTitle("w“ü"); 
-            al2.getDialogPane().setHeaderText("‚²w“ü‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B");
+            al2.setTitle("è³¼å…¥"); 
+            al2.getDialogPane().setHeaderText("ã”è³¼å…¥ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã—ãŸã€‚");
             al2.show();
          }
       }

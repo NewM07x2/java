@@ -4,7 +4,7 @@ class Sample2
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("ƒeƒXƒg‚ÌóŒ±Ò”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("ãƒ†ã‚¹ãƒˆã®å—é¨“è€…æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -15,7 +15,7 @@ class Sample2
       int[] test;
       test = new int[num];
 
-      System.out.println("l”•ª‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("äººæ•°åˆ†ã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
          
       for(int i=0; i<num; i++){
          str = br.readLine();
@@ -24,7 +24,7 @@ class Sample2
       }
 
       for(int i=0; i<num; i++){
-         System.out.println((i+1) + "”Ô–Ú‚Ìl‚Ì“_”‚Í" + test[i] + "‚Å‚·B");
+         System.out.println((i+1) + "ç•ªç›®ã®äººã®ç‚¹æ•°ã¯" + test[i] + "ã§ã™ã€‚");
       }
    }
 }

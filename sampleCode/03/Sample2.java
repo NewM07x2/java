@@ -6,11 +6,11 @@ class Sample2
 
       num = 3;
 
-      System.out.println("•Ï”num‚Ì’l‚Í" + num + "‚Å‚·B");
+      System.out.println("å¤‰æ•°numã®å€¤ã¯" + num + "ã§ã™ã€‚");
 
       num = 5;
 
-      System.out.println("•Ï”num‚Ì’l‚ğ•ÏX‚µ‚Ü‚µ‚½B");
-      System.out.println("•Ï”num‚ÌV‚µ‚¢’l‚Í" + num + "‚Å‚·B");
+      System.out.println("å¤‰æ•°numã®å€¤ã‚’å¤‰æ›´ã—ã¾ã—ãŸã€‚");
+      System.out.println("å¤‰æ•°numã®æ–°ã—ã„å€¤ã¯" + num + "ã§ã™ã€‚");
    }
 }

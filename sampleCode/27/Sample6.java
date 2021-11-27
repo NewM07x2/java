@@ -12,10 +12,10 @@ public class Sample6 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒv‚Ìİ’è
+         //ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒ—ã®è¨­å®š
          response.setContentType("text/html; charset=UTF-8");
         
-         //‘‚«o‚µ
+         //æ›¸ãå‡ºã—
          PrintWriter pw = response.getWriter();
 
          StreamSource in = new StreamSource("http://localhost:8080/YJKSample10/Sample.xml");

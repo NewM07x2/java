@@ -4,7 +4,7 @@ class Sample10
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("¬Ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢i1`5j");
+      System.out.println("æˆç¸¾ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼ˆ1ã€œ5ï¼‰");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -15,17 +15,17 @@ class Sample10
       switch(res){
          case 1:
          case 2:
-            System.out.println("‚à‚¤­‚µ‚ª‚ñ‚Î‚è‚Ü‚µ‚å‚¤B");
+            System.out.println("ã‚‚ã†å°‘ã—ãŒã‚“ã°ã‚Šã¾ã—ã‚‡ã†ã€‚");
             break;
          case 3:
          case 4:
-            System.out.println("‚±‚Ì’²q‚Å‚ª‚ñ‚Î‚è‚Ü‚µ‚å‚¤B");
+            System.out.println("ã“ã®èª¿å­ã§ãŒã‚“ã°ã‚Šã¾ã—ã‚‡ã†ã€‚");
             break;
          case 5:
-            System.out.println("‚½‚¢‚Ö‚ñ—DG‚Å‚·B");
+            System.out.println("ãŸã„ã¸ã‚“å„ªç§€ã§ã™ã€‚");
             break;
          default:
-            System.out.println("1`5‚Ü‚Å‚Ì¬Ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+            System.out.println("1ã€œ5ã¾ã§ã®æˆç¸¾ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
             break;
       }
    }

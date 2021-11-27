@@ -17,7 +17,7 @@ public class Sample1 extends Application
       Scene sc = new Scene(bp, 300, 200);
       
       stage.setScene(sc);      
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 }

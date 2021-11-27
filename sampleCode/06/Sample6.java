@@ -5,10 +5,10 @@ class Sample6
       int i = 1;
 
       do{
-         System.out.println(i + "”Ô–Ú‚ÌŒJ‚è•Ô‚µ‚Å‚·B");
+         System.out.println(i + "ç•ªç›®ã®ç¹°ã‚Šè¿”ã—ã§ã™ã€‚");
          i++;
       }while(i <= 5);
 
-      System.out.println("ŒJ‚è•Ô‚µ‚ªI‚í‚è‚Ü‚µ‚½B");
+      System.out.println("ç¹°ã‚Šè¿”ã—ãŒçµ‚ã‚ã‚Šã¾ã—ãŸã€‚");
    }
 }

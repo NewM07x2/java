@@ -2,23 +2,23 @@ class A
 {
    A()
    {
-      System.out.println("A�̈���0�̃R���X�g���N�^�ł��B");
+      System.out.println("Aの引数0のコンストラクタです。");
    }
    A(int a)
    {
-      System.out.println("A�̈���1�̃R���X�g���N�^�ł��B");
+      System.out.println("Aの引数1のコンストラクタです。");
    }
 }
 class B extends A
 {
    B()
    {
-      System.out.println("B�̈���0�̃R���X�g���N�^�ł��B");
+      System.out.println("Bの引数0のコンストラクタです。");
    }
    B(int b)
    {
       super(b);
-      System.out.println("B�̈���1�̃R���X�g���N�^�ł��B");
+      System.out.println("Bの引数1のコンストラクタです。");
    }
 }
 

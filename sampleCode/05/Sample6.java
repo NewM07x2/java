@@ -4,7 +4,7 @@ class Sample6
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("a‚©b‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("aã‹bã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -14,13 +14,13 @@ class Sample6
 
       switch(res){
          case 'a':
-            System.out.println("a‚ª“ü—Í‚³‚ê‚Ü‚µ‚½B");
+            System.out.println("aãŒå…¥åŠ›ã•ã‚Œã¾ã—ãŸã€‚");
             break;
          case 'b':
-            System.out.println("b‚ª“ü—Í‚³‚ê‚Ü‚µ‚½B");
+            System.out.println("bãŒå…¥åŠ›ã•ã‚Œã¾ã—ãŸã€‚");
             break;
          default:
-            System.out.println("a‚©b‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+            System.out.println("aã‹bã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
             break;
       }
    }

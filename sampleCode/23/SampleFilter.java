@@ -10,20 +10,20 @@ public class SampleFilter implements Filter
                         FilterChain chain)
                throws IOException, ServletException
    {
-      //ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒv‚Ìİ’è
+      //ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒ—ã®è¨­å®š
       response.setContentType("text/html; charset=UTF-8");
 
-      //HTML•¶‘‚Ì‘‚«o‚µ
+      //HTMLæ–‡æ›¸ã®æ›¸ãå‡ºã—
       PrintWriter pw = response.getWriter();
       pw.println("<!DOCTYPE html><html>\n" +
-                 "<head><title>ƒTƒ“ƒvƒ‹</title></head>\n" +
+                 "<head><title>ã‚µãƒ³ãƒ—ãƒ«</title></head>\n" +
                  "<body><div style=\"text-align: center;\">\n" +
-                 "<h2>‚±‚ñ‚É‚¿‚Í</h2>" +
+                 "<h2>ã“ã‚“ã«ã¡ã¯</h2>" +
                  "<hr/>\n");
 
       chain.doFilter(request, response);
 
-      pw.println("<hr/>‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B\n" +
+      pw.println("<hr/>ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã—ãŸã€‚\n" +
                  "</div></body>\n" +
                  "</html>\n");
 

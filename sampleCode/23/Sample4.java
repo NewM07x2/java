@@ -10,48 +10,48 @@ public class Sample4 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒZƒbƒVƒ‡ƒ“‚Ìæ“¾
+         //ã‚»ãƒƒã‚·ãƒ§ãƒ³ã®å–å¾—
          HttpSession hs = request.getSession(true);	
          Integer cn = (Integer) hs.getAttribute("count");	
          Date dt = (Date) hs.getAttribute("date");	
 
          String str1, str2;
 
-         //‰ñ”‚Ìİ’è 
+         //å›æ•°ã®è¨­å®š 
          if(cn == null){
             cn = Integer.valueOf(1);
             dt = new Date();
-            str1 = "‚Í‚¶‚ß‚Ä‚Ì‚¨‚±‚µ‚Å‚·‚ËB";
+            str1 = "ã¯ã˜ã‚ã¦ã®ãŠã“ã—ã§ã™ã­ã€‚";
             str2 = "";
          }
          else{
             cn = Integer.valueOf(cn.intValue() + 1);
             dt = new Date();
-            str1 = cn + "‰ñ–Ú‚Ì‚¨‚±‚µ‚Å‚·‚ËB";
-            str2 = "i‘O‰ñF" + dt + ")";
+            str1 = cn + "å›ç›®ã®ãŠã“ã—ã§ã™ã­ã€‚";
+            str2 = "ï¼ˆå‰å›ï¼š" + dt + ")";
          }
      
-         //ƒZƒbƒVƒ‡ƒ“‚Ìİ’è
+         //ã‚»ãƒƒã‚·ãƒ§ãƒ³ã®è¨­å®š
          hs.setAttribute("count", cn);
          hs.setAttribute("date", dt);
 
-         //ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒv‚Ìİ’è
+         //ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒ—ã®è¨­å®š
          response.setContentType("text/html; charset=UTF-8");
 
-         //HTML•¶‘‚Ì‘‚«o‚µ
+         //HTMLæ–‡æ›¸ã®æ›¸ãå‡ºã—
          PrintWriter pw = response.getWriter();
          pw.println("<!DOCTYPE html><html>\n" +
-                    "<head><title>ƒTƒ“ƒvƒ‹</title></head>\n" +
+                    "<head><title>ã‚µãƒ³ãƒ—ãƒ«</title></head>\n" +
                     "<body><div style=\"text-align: center;\">\n" +
-                    "<h2>‚æ‚¤‚±‚»</h2>" +
+                    "<h2>ã‚ˆã†ã“ã</h2>" +
                     "<hr />\n" +
                     str1 + "<br/>\n" +
                     str2 + "<br/>\n" +
-                    "‚¨‘I‚Ñ‚­‚¾‚³‚¢B<br/>\n" +
+                    "ãŠé¸ã³ãã ã•ã„ã€‚<br/>\n" +
                     "<br/>\n" +
-                    "<a href=\"../car1.html\">æ—pÔ</a><br/>\n" +
-                    "<a href=\"../car2.html\">ƒgƒ‰ƒbƒN</a><br/>\n" +
-                    "<a href=\"../car3.html\">ƒI[ƒvƒ“ƒJ[</a><br/>\n" +
+                    "<a href=\"../car1.html\">ä¹—ç”¨è»Š</a><br/>\n" +
+                    "<a href=\"../car2.html\">ãƒˆãƒ©ãƒƒã‚¯</a><br/>\n" +
+                    "<a href=\"../car3.html\">ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼</a><br/>\n" +
                     "</div></body>\n" +
                     "</html>\n");
         }

@@ -6,6 +6,6 @@ class Sample1
 
       num = 3;
 
-      System.out.println("•Ï”num‚Ì’l‚Í" + num + "‚Å‚·B");
+      System.out.println("å¤‰æ•°numã®å€¤ã¯" + num + "ã§ã™ã€‚");
    }
 }

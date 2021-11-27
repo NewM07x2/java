@@ -1,9 +1,9 @@
-//‚Ì‚è‚à‚ÌƒCƒ“ƒ^[ƒtƒF[ƒX
+//ã®ã‚Šã‚‚ã®ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
 interface iVehicle
 {
    void show();
 }
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car implements iVehicle
 {
    private int num;
@@ -13,15 +13,15 @@ class Car implements iVehicle
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[" + num + "ƒKƒ\ƒŠƒ“—Ê" + gas+ "‚ÌÔ‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas+ "ã®è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
 }
-//”òs‹@ƒNƒ‰ƒX
+//é£›è¡Œæ©Ÿã‚¯ãƒ©ã‚¹
 class Plane implements iVehicle
 {
    private int flight;
@@ -29,12 +29,12 @@ class Plane implements iVehicle
    public Plane(int f)
    {
       flight = f;
-      System.out.println("•Ö" + flight + "‚Ì”òs‹@‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ä¾¿" + flight + "ã®é£›è¡Œæ©Ÿã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
 
    public void show()
    {
-      System.out.println("”òs‹@‚Ì•Ö‚Í" + flight + "‚Å‚·B");
+      System.out.println("é£›è¡Œæ©Ÿã®ä¾¿ã¯" + flight + "ã§ã™ã€‚");
    }
 }
 

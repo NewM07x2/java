@@ -20,31 +20,31 @@ public class Sample3 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
       tv = new TableView<RowData>();
       
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìİ’è
-      TableColumn<RowData, String> tc1 = new TableColumn<RowData, String>("Ô–¼");
-      TableColumn<RowData, String> tc2 = new TableColumn<RowData, String>("‰¿Ši");
-      TableColumn<RowData, String> tc3 = new TableColumn<RowData, String>("Œ“ú");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®è¨­å®š
+      TableColumn<RowData, String> tc1 = new TableColumn<RowData, String>("è»Šå");
+      TableColumn<RowData, String> tc2 = new TableColumn<RowData, String>("ä¾¡æ ¼");
+      TableColumn<RowData, String> tc3 = new TableColumn<RowData, String>("æœˆæ—¥");
 
       tc1.setCellValueFactory(new PropertyValueFactory<RowData, String>("name"));
       tc2.setCellValueFactory(new PropertyValueFactory<RowData, String>("price"));
       tc3.setCellValueFactory(new PropertyValueFactory<RowData, String>("date"));
 
       ObservableList<RowData> ol = FXCollections.observableArrayList();
-      ol.add(new RowData("æ—pÔ", 1200,"10-01"));
-      ol.add(new RowData("ƒgƒ‰ƒbƒN", 2400,"10-05"));
-      ol.add(new RowData("ƒI[ƒvƒ“ƒJ[", 3600,"10-06"));
-      ol.add(new RowData("ƒ^ƒNƒV[", 2500,"10-10"));
-      ol.add(new RowData("ƒXƒ|[ƒcƒJ[", 2600,"10-11"));
-      ol.add(new RowData("ƒ~ƒjƒJ[", 300,"10-12"));
-      ol.add(new RowData("©“]Ô", 800,"10-15"));
-      ol.add(new RowData("O—ÖÔ", 600,"10-18"));
-      ol.add(new RowData("”òs‹@", 15000,"10-19"));
-      ol.add(new RowData("æ—pÔ", 1200,"10-01"));
-      ol.add(new RowData("ƒwƒŠƒRƒvƒ^[", 3500,"10-21"));
+      ol.add(new RowData("ä¹—ç”¨è»Š", 1200,"10-01"));
+      ol.add(new RowData("ãƒˆãƒ©ãƒƒã‚¯", 2400,"10-05"));
+      ol.add(new RowData("ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼", 3600,"10-06"));
+      ol.add(new RowData("ã‚¿ã‚¯ã‚·ãƒ¼", 2500,"10-10"));
+      ol.add(new RowData("ã‚¹ãƒãƒ¼ãƒ„ã‚«ãƒ¼", 2600,"10-11"));
+      ol.add(new RowData("ãƒŸãƒ‹ã‚«ãƒ¼", 300,"10-12"));
+      ol.add(new RowData("è‡ªè»¢è»Š", 800,"10-15"));
+      ol.add(new RowData("ä¸‰è¼ªè»Š", 600,"10-18"));
+      ol.add(new RowData("é£›è¡Œæ©Ÿ", 15000,"10-19"));
+      ol.add(new RowData("ä¹—ç”¨è»Š", 1200,"10-01"));
+      ol.add(new RowData("ãƒ˜ãƒªã‚³ãƒ—ã‚¿ãƒ¼", 3500,"10-21"));
 
       tv.getColumns().add(tc1);
       tv.getColumns().add(tc2);
@@ -52,21 +52,21 @@ public class Sample3 extends Application
 
       tv.setItems(ol);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(lb);
       bp.setCenter(tv);
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 

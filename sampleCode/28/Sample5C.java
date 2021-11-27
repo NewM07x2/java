@@ -31,36 +31,36 @@ public class Sample5C extends Application implements Runnable
       try{
          InetAddress ia = InetAddress.getLocalHost();
 
-         //ƒRƒ“ƒ|[ƒlƒ“ƒg‚Ìì¬
+         //ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã®ä½œæˆ
          tf = new TextField();
          ta = new TextArea();
-         bt = new Button("‘—M");
+         bt = new Button("é€ä¿¡");
 
-         //ƒyƒCƒ“‚Ìì¬
+         //ãƒšã‚¤ãƒ³ã®ä½œæˆ
          BorderPane bp = new BorderPane();
        
          bp.setTop(tf);
          bp.setCenter(ta);
          bp.setBottom(bt);
       
-         //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+         //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
          bt.setOnAction(new SampleEventHandler());
 
-         //ƒV[ƒ“‚Ìì¬
+         //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
          Scene sc = new Scene(bp, 300, 200);
       
-         //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+         //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
          stage.setScene(sc);
 
-         //ƒXƒe[ƒW‚Ì•\¦
-         stage.setTitle("ƒTƒ“ƒvƒ‹");
+         //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+         stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
          stage.show();
        }
        catch(Exception e){
          e.printStackTrace();
       }
 
-      //Ú‘±
+      //æ¥ç¶š
       Thread th = new Thread(this);
       th.start();
    }
@@ -93,7 +93,7 @@ public class Sample5C extends Application implements Runnable
       }
    }
    
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

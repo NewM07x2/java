@@ -4,11 +4,11 @@ class Sample8
    {
       int inum = 160;
 
-      System.out.println("g’·‚Í" + inum + "ƒZƒ“ƒ`‚Å‚·B");
+      System.out.println("èº«é•·ã¯" + inum + "ã‚»ãƒ³ãƒã§ã™ã€‚");
 
-      System.out.println("doubleŒ^‚Ì•Ï”‚É‘ã“ü‚µ‚Ü‚·B");
+      System.out.println("doubleåž‹ã®å¤‰æ•°ã«ä»£å…¥ã—ã¾ã™ã€‚");
       double dnum = inum;
 
-      System.out.println("g’·‚Í" + dnum + "ƒZƒ“ƒ`‚Å‚·B");
+      System.out.println("èº«é•·ã¯" + dnum + "ã‚»ãƒ³ãƒã§ã™ã€‚");
    }
 }

@@ -8,7 +8,7 @@ class Sample9
                 new BufferedReader(new InputStreamReader(System.in));
 
       int[] test = new int[5];
-      System.out.println(test.length + "l‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println(test.length + "äººã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       for(int i=0; i<test.length; i++){
          String str = br.readLine();
@@ -26,7 +26,7 @@ class Sample9
       }
 
       for(int j=0; j<test.length; j++){
-         System.out.println( (j+1) + "”Ô–Ú‚Ìl‚Ì“_”‚Í" + test[j] + "‚Å‚·B");
+         System.out.println( (j+1) + "ç•ªç›®ã®äººã®ç‚¹æ•°ã¯" + test[j] + "ã§ã™ã€‚");
       }
    }
 }

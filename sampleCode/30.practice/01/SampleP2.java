@@ -17,7 +17,7 @@ public class SampleP2 extends Application
       Scene sc = new Scene(bp, 300, 200);
       
       stage.setScene(sc);      
-      stage.setTitle("‚±‚ñ‚É‚¿‚Í");
+      stage.setTitle("ã“ã‚“ã«ã¡ã¯");
       stage.show();
    }
 }

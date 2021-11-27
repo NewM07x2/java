@@ -9,7 +9,7 @@ public class SampleP2 extends Frame
    }
    public SampleP2()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
 

@@ -22,20 +22,20 @@ public class Sample3 extends Application
       try{
          InetAddress ia = InetAddress.getLocalHost();
 
-         //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-         lb1 = new Label("“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-         lb2 = new Label("ƒzƒXƒg–¼");
-         lb3 = new Label("IPƒAƒhƒŒƒX");
+         //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+         lb1 = new Label("å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
+         lb2 = new Label("ãƒ›ã‚¹ãƒˆå");
+         lb3 = new Label("IPã‚¢ãƒ‰ãƒ¬ã‚¹");
          tf1 = new TextField();    
          tf2 = new TextField(); 
          tf3 = new TextField(); 
-         bt = new Button("ŒŸõ");
+         bt = new Button("æ¤œç´¢");
 
-         //ƒyƒCƒ“‚Ìì¬
+         //ãƒšã‚¤ãƒ³ã®ä½œæˆ
          BorderPane bp = new BorderPane();
          VBox vb = new VBox();
 
-         //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+         //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
          vb.getChildren().add(lb1);
          vb.getChildren().add(tf1);
          vb.getChildren().add(lb2);
@@ -46,17 +46,17 @@ public class Sample3 extends Application
          bp.setCenter(vb);
          bp.setBottom(bt);
       
-         //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+         //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
          bt.setOnAction(new SampleEventHandler());
 
-         //ƒV[ƒ“‚Ìì¬
+         //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
          Scene sc = new Scene(bp, 300, 200);
       
-         //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+         //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
          stage.setScene(sc);
 
-         //ƒXƒe[ƒW‚Ì•\¦
-         stage.setTitle("ƒTƒ“ƒvƒ‹");
+         //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+         stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
          stage.show();
       }
       catch(Exception e){
@@ -64,7 +64,7 @@ public class Sample3 extends Application
       }
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

@@ -11,7 +11,7 @@ public class SampleP1 extends Frame
    }
    public SampleP1()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       lb = new Label("Hello");
 

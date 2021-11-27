@@ -20,34 +20,34 @@ public class SampleP2 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
-      lb = new Label("�Ԃł��B");
-      ch = new CheckBox("�摜�̕\��");
+      //コントロールの作成
+      lb = new Label("車です。");
+      ch = new CheckBox("画像の表示");
             
       im = new Image(getClass().getResourceAsStream("car.jpg"));
       iv = new ImageView(im);
      
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       bp.setCenter(lb);
       bp.setBottom(ch);
       
-      //�C�x���g�n���h���̓o�^
+      //イベントハンドラの登録
       ch.setOnAction(new SampleEventHandler());
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 300, 200);
       
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
-   //�C�x���g�n���h���N���X
+   //イベントハンドラクラス
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

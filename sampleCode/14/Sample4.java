@@ -7,17 +7,17 @@ class Sample4
          int[] test;
          test = new int[5];
 
-         System.out.println("test[10]‚É’l‚ğ‘ã“ü‚µ‚Ü‚·B");
+         System.out.println("test[10]ã«å€¤ã‚’ä»£å…¥ã—ã¾ã™ã€‚");
 
          test[10] = 80;
-         System.out.println("test[10]‚É80‚ğ‘ã“ü‚µ‚Ü‚µ‚½B");
+         System.out.println("test[10]ã«80ã‚’ä»£å…¥ã—ã¾ã—ãŸã€‚");
 
       }
       catch(ArrayIndexOutOfBoundsException e){
 
-         System.out.println("”z—ñ‚Ì—v‘f‚ğ‚±‚¦‚Ä‚¢‚Ü‚·B");
-         System.out.println(e + "‚Æ‚¢‚¤—áŠO‚ª”­¶‚µ‚Ü‚µ‚½B");
+         System.out.println("é…åˆ—ã®è¦ç´ ã‚’ã“ãˆã¦ã„ã¾ã™ã€‚");
+         System.out.println(e + "ã¨ã„ã†ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚");
       }
-      System.out.println("–³–I—¹‚µ‚Ü‚µ‚½B");
+      System.out.println("ç„¡äº‹çµ‚äº†ã—ã¾ã—ãŸã€‚");
    }
 }

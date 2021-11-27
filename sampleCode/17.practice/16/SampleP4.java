@@ -11,7 +11,7 @@ public class SampleP4 extends Frame
    }
    public SampleP4()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       bl = true;
 
@@ -24,10 +24,10 @@ public class SampleP4 extends Frame
    public void paint(Graphics g)
    {
       if(bl == true){
-         g.drawString("‚±‚ñ‚É‚¿‚ÍB", 100, 100);
+         g.drawString("ã“ã‚“ã«ã¡ã¯ã€‚", 100, 100);
       }
       else{
-         g.drawString("‚³‚æ‚¤‚È‚çB", 100, 100);
+         g.drawString("ã•ã‚ˆã†ãªã‚‰ã€‚", 100, 100);
       }
    }
 

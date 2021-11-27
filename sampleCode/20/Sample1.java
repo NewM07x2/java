@@ -14,26 +14,26 @@ public class Sample1 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
       lb = new Label();
       
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìİ’è
-      lb.setText("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®è¨­å®š
+      lb.setText("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
       
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();  
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setCenter(lb);
       
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
       
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 }

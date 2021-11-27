@@ -1,10 +1,10 @@
-//•¶š‚Æ”’l‚ğo—Í‚·‚é
+//æ–‡å­—ã¨æ•°å€¤ã‚’å‡ºåŠ›ã™ã‚‹
 class SampleP2
 {
    public static void main(String[] args)
    {
       System.out.println('A');
-      System.out.println("‚æ‚¤‚±‚»Java‚Ö!");
+      System.out.println("ã‚ˆã†ã“ãJavaã¸!");
       System.out.println(123);
    }
 }

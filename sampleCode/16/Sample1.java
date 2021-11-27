@@ -9,7 +9,7 @@ public class Sample1 extends Frame
    }
    public Sample1()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
 

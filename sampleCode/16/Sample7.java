@@ -12,7 +12,7 @@ public class Sample7 extends Frame implements Runnable
    }
    public Sample7()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
 
@@ -35,7 +35,7 @@ public class Sample7 extends Frame implements Runnable
    }
    public void paint(Graphics g)
    {
-      String str = num + "‚Å‚·B";
+      String str = num + "ã§ã™ã€‚";
       g.drawString(str, 100, 100);
    }
 

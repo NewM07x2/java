@@ -10,23 +10,23 @@ public class Sample3
 {
    public static void main(String[] args) throws Exception
    {
-      //DOM‚Ì€”õ‚ğ‚·‚é
+      //DOMã®æº–å‚™ã‚’ã™ã‚‹
       DocumentBuilderFactory dbf
          = DocumentBuilderFactory.newInstance();
       DocumentBuilder db
          = dbf.newDocumentBuilder();
 
-      //•¶‘‚ğV‹Kì¬‚·‚é
+      //æ–‡æ›¸ã‚’æ–°è¦ä½œæˆã™ã‚‹
       Document doc = db.newDocument();
 
-      //ƒ‹[ƒg—v‘f‚ğì¬‚·‚é
-      Element root = doc.createElement("ÔƒŠƒXƒg");
+      //ãƒ«ãƒ¼ãƒˆè¦ç´ ã‚’ä½œæˆã™ã‚‹
+      Element root = doc.createElement("è»Šãƒªã‚¹ãƒˆ");
       doc.appendChild(root);
 
-      //CSV•¶‘‚Ì€”õ‚ğ‚·‚é
+      //CSVæ–‡æ›¸ã®æº–å‚™ã‚’ã™ã‚‹
       BufferedReader br = new BufferedReader(new FileReader("Sample.csv"));
 
-      //CSV•¶‘‚Ìƒ^ƒCƒgƒ‹s‚ğ•Û‘¶‚·‚é
+      //CSVæ–‡æ›¸ã®ã‚¿ã‚¤ãƒˆãƒ«è¡Œã‚’ä¿å­˜ã™ã‚‹
       ArrayList<String> colname = new ArrayList<String>();
       String line = br.readLine();
       StringTokenizer stt = new StringTokenizer(line, ",");
@@ -34,10 +34,10 @@ public class Sample3
          colname.add(stt.nextToken());
       }
 
-      //CSV•¶‘‚ğ•ÏŠ·‚·‚é
+      //CSVæ–‡æ›¸ã‚’å¤‰æ›ã™ã‚‹
       while((line = br.readLine()) != null){
          StringTokenizer std = new StringTokenizer(line, ",");
-         Element car = doc.createElement("Ô");
+         Element car = doc.createElement("è»Š");
          root.appendChild(car);
 
          for(int i=0; i<colname.size(); i++){
@@ -50,13 +50,13 @@ public class Sample3
       }
       br.close();
 
-      //•¶‘‚ğ‘‚«o‚·
+      //æ–‡æ›¸ã‚’æ›¸ãå‡ºã™
       TransformerFactory tff
          = TransformerFactory.newInstance();
       Transformer tf
          = tff.newTransformer();
       tf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
       tf.transform(new DOMSource(doc), new StreamResult("result.xml"));
-      System.out.println("result.xml‚Éo—Í‚µ‚Ü‚µ‚½B");
+      System.out.println("result.xmlã«å‡ºåŠ›ã—ã¾ã—ãŸã€‚");
    }
 }

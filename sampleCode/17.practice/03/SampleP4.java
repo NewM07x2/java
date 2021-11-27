@@ -4,7 +4,7 @@ class SampleP4
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‰~ü—¦‚Ì’l‚Í‚¢‚­‚Â‚Å‚·‚©H");
+      System.out.println("å††å‘¨ç‡ã®å€¤ã¯ã„ãã¤ã§ã™ã‹ï¼Ÿ");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -13,6 +13,6 @@ class SampleP4
 
       double pi = Double.parseDouble(str);
 
-      System.out.println("‰~ü—¦‚Ì’l‚Í" + pi + "‚Å‚·B");
+      System.out.println("å††å‘¨ç‡ã®å€¤ã¯" + pi + "ã§ã™ã€‚");
    }
 }

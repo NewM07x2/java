@@ -1,4 +1,4 @@
-//�ԃN���X
+//車クラス
 class Car
 {
    int num;
@@ -6,8 +6,8 @@ class Car
 
    void show()
    {
-      System.out.println("�Ԃ̃i���o�[��" + num + "�ł��B");
-      System.out.println("�K�\�����ʂ�" + gas + "�ł��B");
+      System.out.println("車のナンバーは" + num + "です。");
+      System.out.println("ガソリン量は" + gas + "です。");
    }
 }
 

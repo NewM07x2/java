@@ -20,26 +20,26 @@ public class SampleP3 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
       lb  = new Label("Hello!");
       lb.setFont(Font.font("Serif", FontWeight.NORMAL, 24));
-      rb1 = new RadioButton("•’Ê");
-      rb2 = new RadioButton("‘¾š");
-      rb3 = new RadioButton("ƒCƒ^ƒŠƒbƒN");
+      rb1 = new RadioButton("æ™®é€š");
+      rb2 = new RadioButton("å¤ªå­—");
+      rb3 = new RadioButton("ã‚¤ã‚¿ãƒªãƒƒã‚¯");
       tg  = new ToggleGroup();
 
-      //ƒgƒOƒ‹ƒOƒ‹[ƒv‚Ö‚Ì’Ç‰Á
+      //ãƒˆã‚°ãƒ«ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®è¿½åŠ 
       rb1.setToggleGroup(tg);
       rb2.setToggleGroup(tg);
       rb3.setToggleGroup(tg);
       
       rb1.setSelected(true);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
       HBox hb = new HBox();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       hb.getChildren().add(rb1);
       hb.getChildren().add(rb2);
       hb.getChildren().add(rb3);
@@ -48,23 +48,23 @@ public class SampleP3 extends Application
       bp.setTop(lb);
       bp.setCenter(hb);
       
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       rb1.setOnAction(new SampleEventHandler());
       rb2.setOnAction(new SampleEventHandler());
       rb3.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

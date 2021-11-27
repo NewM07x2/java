@@ -1,5 +1,5 @@
-4‚Â‚ÌƒtƒHƒ‹ƒ_‚ðAƒtƒHƒ‹ƒ_‚²‚ÆTomcat“à‚ÌwebappsƒtƒHƒ‹ƒ_‚Ì’¼‰º‚É”z’u‚µ‚Ä‚­‚¾‚³‚¢B
-EYJKSample06
-EYJKSample07
-EYJKSample08
-EYJKSample10
+4ã¤ã®ãƒ•ã‚©ãƒ«ãƒ€ã‚’ã€ãƒ•ã‚©ãƒ«ãƒ€ã”ã¨Tomcatå†…ã®webappsãƒ•ã‚©ãƒ«ãƒ€ã®ç›´ä¸‹ã«é…ç½®ã—ã¦ãã ã•ã„ã€‚
+ãƒ»YJKSample06
+ãƒ»YJKSample07
+ãƒ»YJKSample08
+ãƒ»YJKSample10

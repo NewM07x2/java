@@ -12,7 +12,7 @@ class Car extends Thread
          try{
 
             sleep(1000);
-            System.out.println(name + "‚Ìˆ—‚ğ‚µ‚Ä‚¢‚Ü‚·B");
+            System.out.println(name + "ã®å‡¦ç†ã‚’ã—ã¦ã„ã¾ã™ã€‚");
 
          }
          catch(InterruptedException e){}
@@ -24,12 +24,12 @@ class Sample3
 {
    public static void main(String[] args)
    {
-      Car car1 = new Car("1†Ô");
+      Car car1 = new Car("1å·è»Š");
       car1.start();
 
       for(int i=0; i<5; i++){
 
-         System.out.println("main()‚Ìˆ—‚ğ‚µ‚Ä‚¢‚Ü‚·B");
+         System.out.println("main()ã®å‡¦ç†ã‚’ã—ã¦ã„ã¾ã™ã€‚");
 
       }
    }

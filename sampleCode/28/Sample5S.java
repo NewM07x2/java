@@ -13,11 +13,11 @@ public class Sample5S
       try{
          ServerSocket ss = new ServerSocket(PORT);
 
-         System.out.println("‘Ò‹@‚µ‚Ü‚·B");
+         System.out.println("å¾…æ©Ÿã—ã¾ã™ã€‚");
          while(true){
             try{
                Socket sc = ss.accept();
-               System.out.println("‚æ‚¤‚±‚»B");
+               System.out.println("ã‚ˆã†ã“ãã€‚");
                    
                Client cl = new Client(sc);
                cl.start();
@@ -59,7 +59,7 @@ class Client extends Thread
       while(true){
          try{ 
             String str = br.readLine();
-            pw.println("ƒT[ƒo:u" + str + "v‚Å‚·‚ËB");
+            pw.println("ã‚µãƒ¼ãƒ:ã€Œ" + str + "ã€ã§ã™ã­ã€‚");
             pw.flush();
          }
          catch(Exception e){
@@ -67,7 +67,7 @@ class Client extends Thread
                br.close();
                pw.close();
                sc.close();
-               System.out.println("‚³‚æ‚¤‚È‚çB");
+               System.out.println("ã•ã‚ˆã†ãªã‚‰ã€‚");
                break;
              }
              catch(Exception ex){

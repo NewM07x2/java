@@ -4,7 +4,7 @@ class Sample3
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‚¢‚­‚Â*‚ğo—Í‚µ‚Ü‚·‚©H");
+      System.out.println("ã„ãã¤*ã‚’å‡ºåŠ›ã—ã¾ã™ã‹ï¼Ÿ");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));

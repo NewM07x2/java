@@ -16,35 +16,35 @@ public class Sample5 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
-      lb = new Label("��������Ⴂ�܂��B");
+      //コントロールの作成
+      lb = new Label("いらっしゃいませ。");
 
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       bp.setTop(lb);
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 300, 200);
       
-      //�C�x���g�n���h���̓o�^
+      //イベントハンドラの登録
       sc.addEventHandler(MouseEvent.MOUSE_CLICKED, new SampleEventHandler());
 
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 
-   //�C�x���g�n���h���N���X
+   //イベントハンドラクラス
    class SampleEventHandler implements EventHandler<MouseEvent>
    {
       public void handle(MouseEvent e)
       {
-         lb.setText("���w�����肪�Ƃ��������܂��B");
+         lb.setText("ご購入ありがとうございます。");
       }
    }
 }

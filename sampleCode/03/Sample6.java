@@ -4,7 +4,7 @@ class Sample6
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("®”‚ğ2‚Â“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æ•´æ•°ã‚’2ã¤å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -15,7 +15,7 @@ class Sample6
       int num1 = Integer.parseInt(str1);
       int num2 = Integer.parseInt(str2);
 
-      System.out.println("Å‰‚É" + num1 + "‚ª“ü—Í‚³‚ê‚Ü‚µ‚½B");
-      System.out.println("Ÿ‚É" + num2 + "‚ª“ü—Í‚³‚ê‚Ü‚µ‚½B");
+      System.out.println("æœ€åˆã«" + num1 + "ãŒå…¥åŠ›ã•ã‚Œã¾ã—ãŸã€‚");
+      System.out.println("æ¬¡ã«" + num2 + "ãŒå…¥åŠ›ã•ã‚Œã¾ã—ãŸã€‚");
    }
 }

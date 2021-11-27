@@ -4,7 +4,7 @@ class SampleP4
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("®”‚ğ2‚Â“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æ•´æ•°ã‚’2ã¤å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -17,6 +17,6 @@ class SampleP4
 
       int ans = Math.min(num1, num2);
 
-      System.out.println(num1 + "‚Æ" + num2 + "‚Ì‚¤‚¿¬‚³‚¢‚Ù‚¤‚Í" + ans + "‚Å‚·B");
+      System.out.println(num1 + "ã¨" + num2 + "ã®ã†ã¡å°ã•ã„ã»ã†ã¯" + ans + "ã§ã™ã€‚");
    }
 }

@@ -9,40 +9,40 @@ public class SampleP2
 {
    public static void main(String[] args) throws Exception
    {
-      //DOM‚Ì€”õ‚ğ‚·‚é
+      //DOMã®æº–å‚™ã‚’ã™ã‚‹
       DocumentBuilderFactory dbf
          = DocumentBuilderFactory.newInstance();
       DocumentBuilder db
          = dbf.newDocumentBuilder();
 
-      //•¶‘‚ğV‹Kì¬‚·‚é
+      //æ–‡æ›¸ã‚’æ–°è¦ä½œæˆã™ã‚‹
       Document doc = db.newDocument();
 
-      //ƒ‹[ƒg—v‘f‚ğ’Ç‰Á‚·‚é
-      Element root = doc.createElement("‰Ê•¨ƒŠƒXƒg");
+      //ãƒ«ãƒ¼ãƒˆè¦ç´ ã‚’è¿½åŠ ã™ã‚‹
+      Element root = doc.createElement("æœç‰©ãƒªã‚¹ãƒˆ");
       doc.appendChild(root);
 
-      //—v‘f‚ğ’Ç‰Á‚·‚é
-      Element fruit = doc.createElement("‰Ê•¨");
+      //è¦ç´ ã‚’è¿½åŠ ã™ã‚‹
+      Element fruit = doc.createElement("æœç‰©");
       root.appendChild(fruit);
 
-      Element elm1 = doc.createElement("–¼‘O");
-      Text txt1 = doc.createTextNode("‚İ‚©‚ñ");
+      Element elm1 = doc.createElement("åå‰");
+      Text txt1 = doc.createTextNode("ã¿ã‹ã‚“");
       elm1.appendChild(txt1);
       fruit.appendChild(elm1);
 
-      Element elm2 = doc.createElement("d“üæ");
-      Text txt2 = doc.createTextNode("ÂR¤“X");
+      Element elm2 = doc.createElement("ä»•å…¥å…ˆ");
+      Text txt2 = doc.createTextNode("é’å±±å•†åº—");
       elm2.appendChild(txt2);
       fruit.appendChild(elm2);
 
-      //•¶‘‚ğ‘‚«o‚·
+      //æ–‡æ›¸ã‚’æ›¸ãå‡ºã™
       TransformerFactory tff
          = TransformerFactory.newInstance();
       Transformer tf
          = tff.newTransformer();
       tf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
       tf.transform(new DOMSource(doc), new StreamResult("result.xml"));
-      System.out.println("result.xml‚Éo—Í‚µ‚Ü‚µ‚½B");
+      System.out.println("result.xmlã«å‡ºåŠ›ã—ã¾ã—ãŸã€‚");
    }
 }

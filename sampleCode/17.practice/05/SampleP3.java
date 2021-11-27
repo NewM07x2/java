@@ -4,7 +4,7 @@ class SampleP3
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("2‚Â‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("2ã¤ã®æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -16,13 +16,13 @@ class SampleP3
       int num2 = Integer.parseInt(str2);
 
       if(num1 < num2){
-         System.out.println(num1 + "‚æ‚è" + num2 + "‚Ì‚Ù‚¤‚ª‘å‚«‚¢’l‚Å‚·B");
+         System.out.println(num1 + "ã‚ˆã‚Š" + num2 + "ã®ã»ã†ãŒå¤§ãã„å€¤ã§ã™ã€‚");
       }
       else if(num1 > num2){
-         System.out.println(num2 + "‚æ‚è" + num1 + "‚Ì‚Ù‚¤‚ª‘å‚«‚¢’l‚Å‚·B");
+         System.out.println(num2 + "ã‚ˆã‚Š" + num1 + "ã®ã»ã†ãŒå¤§ãã„å€¤ã§ã™ã€‚");
       }
       else{
-         System.out.println("2‚Â‚Ì”‚Í“¯‚¶’l‚Å‚·B");
+         System.out.println("2ã¤ã®æ•°ã¯åŒã˜å€¤ã§ã™ã€‚");
       }
    }
 }

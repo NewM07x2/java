@@ -11,7 +11,7 @@ public class Sample5 extends Frame
    }
    public Sample5()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       Toolkit tk = getToolkit();
       im = tk.getImage("Image.jpg");

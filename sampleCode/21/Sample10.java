@@ -19,23 +19,23 @@ public class Sample10 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb  = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
-      rb1 = new RadioButton("Ô");
-      rb2 = new RadioButton("ƒgƒ‰ƒbƒN");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb  = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
+      rb1 = new RadioButton("è»Š");
+      rb2 = new RadioButton("ãƒˆãƒ©ãƒƒã‚¯");
       tg  = new ToggleGroup();
 
-      //ƒgƒOƒ‹ƒOƒ‹[ƒv‚Ö‚Ì’Ç‰Á
+      //ãƒˆã‚°ãƒ«ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®è¿½åŠ 
       rb1.setToggleGroup(tg);
       rb2.setToggleGroup(tg);
 
       rb1.setSelected(true);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
       HBox hb = new HBox();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       hb.getChildren().add(rb1);
       hb.getChildren().add(rb2);
       hb.setAlignment(Pos.CENTER);
@@ -43,28 +43,28 @@ public class Sample10 extends Application
       bp.setTop(lb);
       bp.setCenter(hb);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       rb1.setOnAction(new SampleEventHandler());
       rb2.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
       {
          RadioButton tmp = (RadioButton) e.getSource();
-         lb.setText(tmp.getText() + "‚ğ‘I‚Ñ‚Ü‚µ‚½B");
+         lb.setText(tmp.getText() + "ã‚’é¸ã³ã¾ã—ãŸã€‚");
       }
    }
 }

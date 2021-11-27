@@ -22,13 +22,13 @@ public class Sample4 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
       tv = new TableView<RowData>();
       
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìİ’è
-      TableColumn<RowData, String> tc1 = new TableColumn<RowData, String>("“ú•t");
-      TableColumn<RowData, String> tc2 = new TableColumn<RowData, String>("‰c‹Æ");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®è¨­å®š
+      TableColumn<RowData, String> tc1 = new TableColumn<RowData, String>("æ—¥ä»˜");
+      TableColumn<RowData, String> tc2 = new TableColumn<RowData, String>("å–¶æ¥­");
 
       tc1.setCellValueFactory(new PropertyValueFactory<RowData, String>("date"));
       tc2.setCellValueFactory(new PropertyValueFactory<RowData, String>("business"));
@@ -43,21 +43,21 @@ public class Sample4 extends Application
 
       tv.setItems(ol);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(lb);
       bp.setCenter(tv);
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
@@ -75,9 +75,9 @@ public class Sample4 extends Application
          this.date = new SimpleStringProperty(df.format(d));
 
          if(d.getDayOfWeek() == DayOfWeek.SUNDAY)
-            this.business = new SimpleStringProperty("‹x‹Æ“ú‚Å‚·B");
+            this.business = new SimpleStringProperty("ä¼‘æ¥­æ—¥ã§ã™ã€‚");
          else
-            this.business = new SimpleStringProperty("‰c‹Æ“ú‚Å‚·B");
+            this.business = new SimpleStringProperty("å–¶æ¥­æ—¥ã§ã™ã€‚");
 
        }
        public StringProperty dateProperty(){return date;}

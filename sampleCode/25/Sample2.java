@@ -5,22 +5,22 @@ public class Sample2
    public static void main(String args[])
    {
       try{
-         //Ú‘±‚Ì€”õ
+         //æ¥ç¶šã®æº–å‚™
          String url = "jdbc:derby:cardb;create=true";
          String usr = "";
          String pw = "";
 
-         //ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±
+         //ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¸ã®æ¥ç¶š
          Connection cn = DriverManager.getConnection(url, usr, pw);
 
-         //–â‚¢‡‚í‚¹‚Ì€”õ
+         //å•ã„åˆã‚ã›ã®æº–å‚™
          Statement st = cn.createStatement();
-         String qry = "SELECT * FROM Ô•\ WHERE ”Ô†>=3";
+         String qry = "SELECT * FROM è»Šè¡¨ WHERE ç•ªå·>=3";
          
-         //–â‚¢‡‚í‚¹
+         //å•ã„åˆã‚ã›
          ResultSet rs = st.executeQuery(qry);
 
-         //ƒf[ƒ^‚Ìæ“¾
+         //ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          ResultSetMetaData rm = rs.getMetaData();
          int cnum = rm.getColumnCount();
          while(rs.next()){
@@ -30,7 +30,7 @@ public class Sample2
             System.out.println("");
          }
 
-         //Ú‘±‚ÌƒNƒ[ƒY
+         //æ¥ç¶šã®ã‚¯ãƒ­ãƒ¼ã‚º
          rs.close();
          st.close();
          cn.close();

@@ -2,7 +2,7 @@ class Sample2
 {
    public static void main(String[] args)
    {
-      System.out.print("‚æ‚¤‚±‚»Java‚Ö!");
-      System.out.print("Java‚ğ‚Í‚¶‚ß‚Ü‚µ‚å‚¤!");
+      System.out.print("ã‚ˆã†ã“ãJavaã¸!");
+      System.out.print("Javaã‚’ã¯ã˜ã‚ã¾ã—ã‚‡ã†!");
    }
 }

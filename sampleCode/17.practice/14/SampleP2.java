@@ -14,7 +14,7 @@ class SampleP2
          pw.close();
       }
       catch(IOException e){
-         System.out.println("入出力エラーです。");
+         System.out.println("蜈･蜃ｺ蜉帙お繝ｩ繝ｼ縺ｧ縺吶�");
       }
    }
 }

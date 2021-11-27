@@ -8,13 +8,13 @@ public class Sample5 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒtƒH[ƒ€ƒf[ƒ^‚Ìæ“¾
+         //ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          String carname = request.getParameter("cars");
 
-         //ƒT[ƒuƒŒƒbƒgƒRƒ“ƒeƒLƒXƒg‚Ìæ“¾
+         //ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®å–å¾—
          ServletContext sc = getServletContext();
 
-         //ƒŠƒNƒGƒXƒg‚Ì“]‘—
+         //ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®è»¢é€
          if(carname.length() != 0){
              sc.getRequestDispatcher("/Sample5.jsp")
                .forward(request, response);

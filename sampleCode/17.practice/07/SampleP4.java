@@ -4,7 +4,7 @@ class SampleP4
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("5l‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("5äººã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -26,9 +26,9 @@ class SampleP4
       }
 
       for(int i=0; i<test.length; i++){
-         System.out.println((i+1) + "”Ô–Ú‚Ìl‚Ì“_”‚Í" + test[i] + "‚Å‚·B");
+         System.out.println((i+1) + "ç•ªç›®ã®äººã®ç‚¹æ•°ã¯" + test[i] + "ã§ã™ã€‚");
       }
 
-      System.out.println("Å‚“_‚Í" + max + "“_‚Å‚·B");
+      System.out.println("æœ€é«˜ç‚¹ã¯" + max + "ç‚¹ã§ã™ã€‚");
    }
 }

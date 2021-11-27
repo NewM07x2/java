@@ -1,15 +1,15 @@
-//‚Ì‚è‚à‚ÌƒNƒ‰ƒX
+//ã®ã‚Šã‚‚ã®ã‚¯ãƒ©ã‚¹
 abstract class Vehicle
 {
    protected int speed;
    public void setSpeed(int s)
    {
      speed = s;
-     System.out.println("‘¬“x‚ğ" + speed + "‚É‚µ‚Ü‚µ‚½B");
+     System.out.println("é€Ÿåº¦ã‚’" + speed + "ã«ã—ã¾ã—ãŸã€‚");
    }
    abstract void show();
 }
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car extends Vehicle
 {
    private int num;
@@ -19,16 +19,16 @@ class Car extends Vehicle
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[" + num + "ƒKƒ\ƒŠƒ“—Ê" + gas+ "‚ÌÔ‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas+ "ã®è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
-      System.out.println("‘¬“x‚Í" + speed + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
+      System.out.println("é€Ÿåº¦ã¯" + speed + "ã§ã™ã€‚");
    }
 }
-//”òs‹@ƒNƒ‰ƒX
+//é£›è¡Œæ©Ÿã‚¯ãƒ©ã‚¹
 class Plane extends Vehicle
 {
    private int flight;
@@ -36,12 +36,12 @@ class Plane extends Vehicle
    public Plane(int f)
    {
       flight = f;
-      System.out.println("•Ö" + flight + "‚Ì”òs‹@‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ä¾¿" + flight + "ã®é£›è¡Œæ©Ÿã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void show()
    {
-      System.out.println("”òs‹@‚Ì•Ö‚Í" + flight + "‚Å‚·B");
-      System.out.println("‘¬“x‚Í" + speed + "‚Å‚·B");
+      System.out.println("é£›è¡Œæ©Ÿã®ä¾¿ã¯" + flight + "ã§ã™ã€‚");
+      System.out.println("é€Ÿåº¦ã¯" + speed + "ã§ã™ã€‚");
    }
 }
 
@@ -57,9 +57,9 @@ class Sample2
 
       for(int i=0; i<vc.length; i++){
           if(vc[i] instanceof Car)
-            System.out.println((i+1) + "”Ô–Ú‚ÌƒIƒuƒWƒFƒNƒg‚ÍCarƒNƒ‰ƒX‚Å‚·B");
+            System.out.println((i+1) + "ç•ªç›®ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯Carã‚¯ãƒ©ã‚¹ã§ã™ã€‚");
           else
-            System.out.println((i+1) + "”Ô–Ú‚ÌƒIƒuƒWƒFƒNƒg‚ÍCarƒNƒ‰ƒX‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
+            System.out.println((i+1) + "ç•ªç›®ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯Carã‚¯ãƒ©ã‚¹ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
       }
    }
 }

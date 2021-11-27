@@ -7,7 +7,7 @@ class Sample11
       };
 
       for(int i=0; i<test.length; i++){
-         System.out.println((i+1) + "”Ô–Ú‚Ì”z—ñ—v‘f‚Ì’·‚³‚Í" + test[i].length + "‚Å‚·B");
+         System.out.println((i+1) + "ç•ªç›®ã®é…åˆ—è¦ç´ ã®é•·ã•ã¯" + test[i].length + "ã§ã™ã€‚");
       }
    }
 }

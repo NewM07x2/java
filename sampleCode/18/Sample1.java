@@ -2,6 +2,6 @@ public class Sample1
 {
    public static void main(String[] args)
    {
-      System.out.println("ようこそアプリケーションへ!");
+      System.out.println("繧医≧縺薙◎繧｢繝励Μ繧ｱ繝ｼ繧ｷ繝ｧ繝ｳ縺ｸ!");
    }
 }

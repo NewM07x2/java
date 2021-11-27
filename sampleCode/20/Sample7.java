@@ -16,31 +16,31 @@ public class Sample7 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb1 = new Label("–îˆóƒL[‚Å‚¨‘I‚Ñ‚­‚¾‚³‚¢B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb1 = new Label("çŸ¢å°ã‚­ãƒ¼ã§ãŠé¸ã³ãã ã•ã„ã€‚");
       lb2 = new Label();
             
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(lb1);
       bp.setBottom(lb2);
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       sc.setOnKeyPressed(new SampleEventHandler());
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<KeyEvent>
    {
       public void handle(KeyEvent e)
@@ -49,17 +49,17 @@ public class Sample7 extends Application
          KeyCode k = e.getCode();
          switch(k){
             case UP:
-              str = "ã"; break;
+              str = "ä¸Š"; break;
             case DOWN:
-              str = "‰º"; break;
+              str = "ä¸‹"; break;
             case LEFT:
-              str = "¶"; break;
+              str = "å·¦"; break;
             case RIGHT:
-              str = "‰E"; break;
+              str = "å³"; break;
             default:
-              str = "‘¼‚ÌƒL[";
+              str = "ä»–ã®ã‚­ãƒ¼";
          }
-         lb2.setText(str + "‚Å‚·‚ËB");
+         lb2.setText(str + "ã§ã™ã­ã€‚");
       }
    }
 }

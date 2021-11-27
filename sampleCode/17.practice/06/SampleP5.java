@@ -4,7 +4,7 @@ class SampleP5
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("2ˆÈã‚Ì®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("2ä»¥ä¸Šã®æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
        new BufferedReader(new InputStreamReader(System.in));
@@ -14,10 +14,10 @@ class SampleP5
 
        for(int i=2; i<=num; i++){
           if(i == num){
-             System.out.println(num + "‚Í‘f”‚Å‚·B");
+             System.out.println(num + "ã¯ç´ æ•°ã§ã™ã€‚");
            }
            else if(num % i == 0){
-             System.out.println(num + "‚Í‘f”‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
+             System.out.println(num + "ã¯ç´ æ•°ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
              break;
            }
        }

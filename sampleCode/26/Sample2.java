@@ -5,7 +5,7 @@ public class Sample2
    public static void main(String[] args)
    {
       if(args.length != 2){
-         System.out.println("ƒpƒ‰ƒ[ƒ^‚Ì”‚ªˆá‚¢‚Ü‚·B");
+         System.out.println("ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ•°ãŒé•ã„ã¾ã™ã€‚");
          System.exit(1);
       }
 
@@ -13,15 +13,15 @@ public class Sample2
          File fl1 = new File(args[0]);
          File fl2 = new File(args[1]);
 
-         System.out.println("•ÏX‘O‚Ìƒtƒ@ƒCƒ‹–¼‚Í" + fl1.getName() + "‚Å‚·B");
+         System.out.println("å¤‰æ›´å‰ã®ãƒ•ã‚¡ã‚¤ãƒ«åã¯" + fl1.getName() + "ã§ã™ã€‚");
 
          boolean res = fl1.renameTo(fl2);
          if(res == true){
-            System.out.println("ƒtƒ@ƒCƒ‹–¼‚ğ•ÏX‚µ‚Ü‚µ‚½B");
-            System.out.println("•ÏXŒã‚Ìƒtƒ@ƒCƒ‹–¼‚Í" + fl2.getName() + "‚Å‚·B");
+            System.out.println("ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å¤‰æ›´ã—ã¾ã—ãŸã€‚");
+            System.out.println("å¤‰æ›´å¾Œã®ãƒ•ã‚¡ã‚¤ãƒ«åã¯" + fl2.getName() + "ã§ã™ã€‚");
          }
          else{
-            System.out.println("ƒtƒ@ƒCƒ‹–¼‚ğ•ÏX‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B");
+            System.out.println("ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚");
          }
       }
       catch(Exception e){

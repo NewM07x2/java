@@ -21,10 +21,10 @@ public class Sample extends Application
    private Canvas cv;
    private ToolBar tb;
 
-   private ArrayList<Shape> shapeList;    //}Œ`ƒŠƒXƒg
-   private int currentShape;              //‘I‘ğ}Œ`
-   private Color currentColor;            //‘I‘ğF
-   private double x1, x2, y1, y2;         //•`‰æ’†‚ÌÀ•W
+   private ArrayList<Shape> shapeList;    //å›³å½¢ãƒªã‚¹ãƒˆ
+   private int currentShape;              //é¸æŠå›³å½¢
+   private Color currentColor;            //é¸æŠè‰²
+   private double x1, x2, y1, y2;         //æç”»ä¸­ã®åº§æ¨™
 
    public static void main(String[] args)
    {
@@ -32,22 +32,22 @@ public class Sample extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬Eİ’è
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆãƒ»è¨­å®š
       cv = new Canvas(600, 340);
       mb = new MenuBar();
       cp = new ColorPicker();
       tb = new ToolBar();
 
-      mn[0] = new Menu("ƒtƒ@ƒCƒ‹");
-      mn[1] = new Menu("İ’è");
-      mn[2] = new Menu("}Œ`");
+      mn[0] = new Menu("ãƒ•ã‚¡ã‚¤ãƒ«");
+      mn[1] = new Menu("è¨­å®š");
+      mn[2] = new Menu("å›³å½¢");
 
-      mi[0] = new MenuItem("ŠJ‚­");
-      mi[1] = new MenuItem("•Û‘¶");
+      mi[0] = new MenuItem("é–‹ã");
+      mi[1] = new MenuItem("ä¿å­˜");
 
-      rmi[0] = new RadioMenuItem("lŠpŒ`");
-      rmi[1] = new RadioMenuItem("‘È‰~");
-      rmi[2] = new RadioMenuItem("’¼ü");
+      rmi[0] = new RadioMenuItem("å››è§’å½¢");
+      rmi[1] = new RadioMenuItem("æ¥•å††");
+      rmi[2] = new RadioMenuItem("ç›´ç·š");
 
       mn[0].getItems().add(mi[0]);
       mn[0].getItems().add(mi[1]);
@@ -68,15 +68,15 @@ public class Sample extends Application
       rmi[1].setToggleGroup(tg);
       rmi[2].setToggleGroup(tg);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(mb);
       bp.setCenter(cv);
       bp.setBottom(tb);
       
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
        for(int i=0; i<mi.length; i++)
       {
          mi[i].setOnAction(new SampleEventHandler()); 
@@ -92,7 +92,7 @@ public class Sample extends Application
       cv.addEventHandler(MouseEvent.MOUSE_RELEASED, 
          (new SampleMouseEventHandler())); 
 
-      //‰Šú‰»‚ğ‚·‚é
+      //åˆæœŸåŒ–ã‚’ã™ã‚‹
       shapeList = new ArrayList<Shape>();
       currentShape = Shape.RECT;
       currentColor = Color.BLUE;
@@ -100,18 +100,18 @@ public class Sample extends Application
       rmi[0].setSelected(true);
       x1=-1; y1=-1; x2=-1; y2=-1;
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 600, 400);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
@@ -120,10 +120,10 @@ public class Sample extends Application
             try{
                FileChooser fc = new FileChooser();
               fc.getExtensionFilters().add(
-                 new FileChooser.ExtensionFilter("ƒOƒ‰ƒtƒBƒbƒNƒtƒ@ƒCƒ‹", "*.g"));
+                 new FileChooser.ExtensionFilter("ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«", "*.g"));
                File flo = fc.showOpenDialog(new Stage());
                if(flo != null){
-                  //ƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚Ş
+                  //ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€
                   ObjectInputStream oi 
                      = new ObjectInputStream(new FileInputStream(flo));
                   Shape tmp = null;
@@ -140,9 +140,9 @@ public class Sample extends Application
             GraphicsContext gc = cv.getGraphicsContext2D();
             gc.clearRect(0, 0, 600, 340);
             for(int i=0; i < shapeList.size(); i++){
-               //}Œ`ƒIƒuƒWƒFƒNƒg‚ğƒŠƒXƒg‚©‚çæ‚èo‚·
+               //å›³å½¢ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒªã‚¹ãƒˆã‹ã‚‰å–ã‚Šå‡ºã™
                Shape  sh = (Shape) shapeList.get(i);
-               //}Œ`ƒIƒuƒWƒFƒNƒg©g‚É‚æ‚Á‚Ä•`‰æ‚·‚é
+               //å›³å½¢ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè‡ªèº«ã«ã‚ˆã£ã¦æç”»ã™ã‚‹
                sh.draw(gc);
             }
          }
@@ -150,7 +150,7 @@ public class Sample extends Application
             try{
               FileChooser fc = new FileChooser();
               fc.getExtensionFilters().add(
-                 new FileChooser.ExtensionFilter("ƒOƒ‰ƒtƒBƒbƒNƒtƒ@ƒCƒ‹", "*.g"));
+                 new FileChooser.ExtensionFilter("ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«", "*.g"));
               File fls = fc.showSaveDialog(new Stage());
                if(fls != null){
                   ObjectOutputStream oo 
@@ -166,19 +166,19 @@ public class Sample extends Application
                ex.printStackTrace();
             }
         }
-         //lŠpŒ`‚Éİ’è‚·‚é
+         //å››è§’å½¢ã«è¨­å®šã™ã‚‹
          else if(e.getSource() == rmi[0]){
             currentShape = Shape.RECT;
          }
-         //‘È‰~‚Éİ’è‚·‚é
+         //æ¥•å††ã«è¨­å®šã™ã‚‹
          else if(e.getSource() == rmi[1]){
             currentShape = Shape.OVAL;
          }
-         //’¼ü‚Éİ’è‚·‚é
+         //ç›´ç·šã«è¨­å®šã™ã‚‹
          else if(e.getSource() == rmi[2]){
             currentShape = Shape.LINE;
          }
-         //F‚Ì‘I‘ğ‰æ–Ê‚ğ•\¦‚·‚é
+         //è‰²ã®é¸æŠç”»é¢ã‚’è¡¨ç¤ºã™ã‚‹
          else if(e.getSource() == cp){
             currentColor = cp.getValue();
          }
@@ -189,16 +189,16 @@ public class Sample extends Application
       public void handle(MouseEvent e)
       {
          if(e.getEventType() == MouseEvent.MOUSE_PRESSED){
-            //•`‰æ’†‚ÌÀ•W‚ğ‹L˜^‚·‚é
+            //æç”»ä¸­ã®åº§æ¨™ã‚’è¨˜éŒ²ã™ã‚‹
             x1 = e.getX();
             y1 = e.getY();
          }
          else if(e.getEventType() == MouseEvent.MOUSE_RELEASED){
             x2 = e.getX(); y2 = e.getY();
-            //}Œ`‚ğì¬‚µ‚È‚¢‚Æ‚«
+            //å›³å½¢ã‚’ä½œæˆã—ãªã„ã¨ã
             if(x1 < 0  || y1 < 0 || (x1 == x2 && y1 == y2))
                return;
-            //}Œ`ƒIƒuƒWƒFƒNƒg‚ğì¬‚·‚é
+            //å›³å½¢ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã™ã‚‹
             Shape sh = null;
             if(currentShape == Shape.RECT){
                 sh = new Rect();
@@ -209,13 +209,13 @@ public class Sample extends Application
             else if(currentShape == Shape.LINE){
                 sh = new Line();
             }
-            //}Œ`ƒIƒuƒWƒFƒNƒg‚ÌF‚ğİ’è‚·‚é
+            //å›³å½¢ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®è‰²ã‚’è¨­å®šã™ã‚‹
             double r = currentColor.getRed();
             double g = currentColor.getGreen();
             double b = currentColor.getBlue();
             sh.setColor(r, g, b);
 
-            //}Œ`ƒIƒuƒWƒFƒNƒg‚ÌÀ•W‚ğİ’è‚·‚é
+            //å›³å½¢ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åº§æ¨™ã‚’è¨­å®šã™ã‚‹
              if(currentShape != Shape.LINE){
                if(x1 > x2){
                   x2 = x1;
@@ -229,10 +229,10 @@ public class Sample extends Application
             sh.setStartPoint(x1, y1);
             sh.setEndPoint(x2, y2);
 
-            //}Œ`ƒIƒuƒWƒFƒNƒg‚ğƒŠƒXƒg––”ö‚É’Ç‰Á‚·‚é
+            //å›³å½¢ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒªã‚¹ãƒˆæœ«å°¾ã«è¿½åŠ ã™ã‚‹
             shapeList.add(sh);
 
-            //}Œ`‚ğ•`‰æ‚·‚é
+            //å›³å½¢ã‚’æç”»ã™ã‚‹
             GraphicsContext gc = cv.getGraphicsContext2D();
             sh.draw(gc);
          }

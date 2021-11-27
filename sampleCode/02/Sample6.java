@@ -2,9 +2,9 @@ class Sample6
 {
    public static void main(String[] args)
    {
-      System.out.println("10i”‚Ì10‚Í" + 10 + "‚Å‚·B");
-      System.out.println("8i”‚Ì10‚Í" + 010 + "‚Å‚·B");
-      System.out.println("16i”‚Ì10‚Í" + 0x10 + "‚Å‚·B");
-      System.out.println("16i”‚ÌF‚Í" + 0xF + "‚Å‚·B");
+      System.out.println("10é€²æ•°ã®10ã¯" + 10 + "ã§ã™ã€‚");
+      System.out.println("8é€²æ•°ã®10ã¯" + 010 + "ã§ã™ã€‚");
+      System.out.println("16é€²æ•°ã®10ã¯" + 0x10 + "ã§ã™ã€‚");
+      System.out.println("16é€²æ•°ã®Fã¯" + 0xF + "ã§ã™ã€‚");
    }
 }

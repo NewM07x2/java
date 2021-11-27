@@ -16,7 +16,7 @@ public class Sample4 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
+      //コントロールの作成
       for(int i=0; i<bt.length; i++){
          bt[i] = new Button(Integer.toString(i));
       }
@@ -24,12 +24,12 @@ public class Sample4 extends Application
          lb[i] = new Label(Integer.toString(i));
       }
 
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
       HBox hb = new HBox();
       VBox vb = new VBox();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       for(int i=0; i<bt.length; i++){
          hb.getChildren().add(bt[i]);
       }
@@ -43,14 +43,14 @@ public class Sample4 extends Application
       bp.setTop(hb);
       bp.setCenter(vb);
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 300, 200);
       
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 }

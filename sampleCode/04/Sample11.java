@@ -7,6 +7,6 @@ class Sample11
 
       double div = (double)num1 / (double) num2;
       
-      System.out.println("5/4ÇÕ" + div + "Ç≈Ç∑ÅB");
+      System.out.println("5/4„ÅØ" + div + "„Åß„Åô„ÄÇ");
    }
 }

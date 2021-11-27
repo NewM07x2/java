@@ -4,7 +4,7 @@ class SampleP2
 {
    public static void main(String[] args)throws IOException
    {
-      System.out.println("ƒeƒXƒg‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢Bi0‚ÅI—¹j");
+      System.out.println("ãƒ†ã‚¹ãƒˆã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚ï¼ˆ0ã§çµ‚äº†ï¼‰");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -18,6 +18,6 @@ class SampleP2
          sum += num;
       }while(num != 0);
 
-      System.out.println("ƒeƒXƒg‚Ì‡Œv“_‚Í" + sum + "“_‚Å‚·B");
+      System.out.println("ãƒ†ã‚¹ãƒˆã®åˆè¨ˆç‚¹ã¯" + sum + "ç‚¹ã§ã™ã€‚");
    }
 }

@@ -8,22 +8,22 @@ public class SamplePS
       SamplePS sm = new SamplePS();
 
       if(args.length != 1){
-         System.out.println("ƒpƒ‰ƒ[ƒ^‚Ì”‚ªˆá‚¢‚Ü‚·B");
+         System.out.println("ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ•°ãŒé•ã„ã¾ã™ã€‚");
          System.exit(1);
       }
 
       try{
          ServerSocket ss = new ServerSocket(Integer.parseInt(args[0]));
 
-         System.out.println("‘Ò‹@‚µ‚Ü‚·B");
+         System.out.println("å¾…æ©Ÿã—ã¾ã™ã€‚");
          while(true){
             Socket sc = ss.accept();
-            System.out.println("‚æ‚¤‚±‚»B");
+            System.out.println("ã‚ˆã†ã“ãã€‚");
                    
             PrintWriter pw = new PrintWriter
                (new BufferedWriter
                (new OutputStreamWriter(sc.getOutputStream())));
-            pw.println("‚±‚¿‚ç‚ÍƒT[ƒo‚Å‚·B");
+            pw.println("ã“ã¡ã‚‰ã¯ã‚µãƒ¼ãƒã§ã™ã€‚");
             pw.flush();
             pw.close();
 

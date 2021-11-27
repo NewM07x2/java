@@ -4,8 +4,8 @@ class Sample8
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‰½”Ô–Ú‚ÌƒR[ƒX‚É‚µ‚Ü‚·‚©H");
-      System.out.println("®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("ä½•ç•ªç›®ã®ã‚³ãƒ¼ã‚¹ã«ã—ã¾ã™ã‹ï¼Ÿ");
+      System.out.println("æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -15,6 +15,6 @@ class Sample8
 
       char ans = (res == 1) ? 'A' : 'B';
 
-      System.out.println(ans + "ƒR[ƒX‚ğ‘I‘ğ‚µ‚Ü‚µ‚½B");
+      System.out.println(ans + "ã‚³ãƒ¼ã‚¹ã‚’é¸æŠã—ã¾ã—ãŸã€‚");
    }
 }

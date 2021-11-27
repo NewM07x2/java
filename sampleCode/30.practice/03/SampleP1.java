@@ -16,32 +16,32 @@ public class SampleP1 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //�R���g���[���̍쐬
-      lb = new Label("��������Ⴂ�܂��B");
-      bt = new Button("�w��");
+      //コントロールの作成
+      lb = new Label("いらっしゃいませ。");
+      bt = new Button("購入");
 
-      //�y�C���̍쐬
+      //ペインの作成
       BorderPane bp = new BorderPane();
 
-      //�y�C���ւ̒ǉ�
+      //ペインへの追加
       bp.setTop(lb);
       bp.setCenter(bt);
 
-      //�C�x���g�n���h���̓o�^
+      //イベントハンドラの登録
       bt.setOnAction(new SampleEventHandler());
 
-      //�V�[���̍쐬
+      //シーンの作成
       Scene sc = new Scene(bp, 300, 200);
 
-      //�X�e�[�W�ւ̒ǉ�
+      //ステージへの追加
       stage.setScene(sc);
 
-      //�X�e�[�W�̕\��
-      stage.setTitle("�T���v��");
+      //ステージの表示
+      stage.setTitle("サンプル");
       stage.show();
    }
 
-   //�C�x���g�n���h���N���X
+   //イベントハンドラクラス
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)

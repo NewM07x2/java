@@ -26,13 +26,13 @@ class Sample9
              System.out.println(test[i]);
          }
 
-         System.out.println("�ō��_��" + max + "�ł��B");
-         System.out.println("�Œ�_��" + min + "�ł��B");
+         System.out.println("最高点は" + max + "です。");
+         System.out.println("最低点は" + min + "です。");
 
          br.close();
       }
       catch(IOException e){
-         System.out.println("���o�̓G���[�ł��B");
+         System.out.println("入出力エラーです。");
       }
    }
 }

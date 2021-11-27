@@ -9,16 +9,16 @@ public class Sample4 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒT[ƒuƒŒƒbƒgƒRƒ“ƒeƒLƒXƒg‚Ìæ“¾
+         //ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®å–å¾—
          ServletContext sc = getServletContext();
 
-         //Bean‚Ìì¬
+         //Beanã®ä½œæˆ
          CarDBBean cb = new CarDBBean();
 
-         //ƒŠƒNƒGƒXƒg‚Éİ’è
+         //ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«è¨­å®š
          request.setAttribute("cb", cb);
 
-         //ƒŠƒNƒGƒXƒg‚Ì“]‘—
+         //ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®è»¢é€
          sc.getRequestDispatcher("/Sample4.jsp")
            .forward(request, response);
       }

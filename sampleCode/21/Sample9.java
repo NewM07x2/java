@@ -18,16 +18,16 @@ public class Sample9 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
-      ch1 = new CheckBox("Ô");
-      ch2 = new CheckBox("ƒgƒ‰ƒbƒN");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
+      ch1 = new CheckBox("è»Š");
+      ch2 = new CheckBox("ãƒˆãƒ©ãƒƒã‚¯");
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
       HBox hb = new HBox();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       hb.getChildren().add(ch1);
       hb.getChildren().add(ch2);
       hb.setAlignment(Pos.CENTER);
@@ -35,32 +35,32 @@ public class Sample9 extends Application
       bp.setTop(lb);
       bp.setCenter(hb);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       ch1.setOnAction(new SampleEventHandler());
       ch2.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
       {
          CheckBox tmp = (CheckBox) e.getSource();
          if(tmp.isSelected() == true){
-            lb.setText(tmp.getText() + "‚ğ‘I‚Ñ‚Ü‚µ‚½B");
+            lb.setText(tmp.getText() + "ã‚’é¸ã³ã¾ã—ãŸã€‚");
          }
          else if(tmp.isSelected() == false){
-            lb.setText(tmp.getText() + "‚ğ‚â‚ß‚Ü‚µ‚½B");
+            lb.setText(tmp.getText() + "ã‚’ã‚„ã‚ã¾ã—ãŸã€‚");
          }
       }
    }

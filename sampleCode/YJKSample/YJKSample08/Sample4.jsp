@@ -1,4 +1,4 @@
-﻿<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="java.util.*" %>
 <jsp:useBean id="cb" class="mybeans.CarDBBean" scope="request"/>
 <%!

@@ -5,11 +5,11 @@ class Sample9
 
       double dnum = 160.5;
 
-      System.out.println("g’·‚Í" + dnum + "ƒZƒ“ƒ`‚Å‚·B");
+      System.out.println("èº«é•·ã¯" + dnum + "ã‚»ãƒ³ãƒã§ã™ã€‚");
 
-      System.out.println("intŒ^‚Ì•Ï”‚É‘ã“ü‚µ‚Ü‚·B");
+      System.out.println("intåž‹ã®å¤‰æ•°ã«ä»£å…¥ã—ã¾ã™ã€‚");
       int inum = (int)dnum;
 
-      System.out.println("g’·‚Í" + inum + "ƒZƒ“ƒ`‚Å‚·B");
+      System.out.println("èº«é•·ã¯" + inum + "ã‚»ãƒ³ãƒã§ã™ã€‚");
    }
 }

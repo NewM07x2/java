@@ -12,7 +12,7 @@ public class Sample6 extends Frame
    }
    public Sample6()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
       addMouseListener(new SampleMouseAdapter());

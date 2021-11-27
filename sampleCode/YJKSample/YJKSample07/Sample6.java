@@ -9,21 +9,21 @@ public class Sample6 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒtƒH[ƒ€ƒf[ƒ^‚Ìæ“¾
+         //ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          String carname = request.getParameter("cars");
          
-         //Bean‚Ìì¬
+         //Beanã®ä½œæˆ
          CarBean cb = new CarBean();
          cb.setCarname(carname);
          cb.makeCardata();
       
-         //ƒŠƒNƒGƒXƒg‚Éİ’è
+         //ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«è¨­å®š
          request.setAttribute("cb", cb);
 
-         //ƒT[ƒuƒŒƒbƒgƒRƒ“ƒeƒLƒXƒg‚Ìæ“¾
+         //ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®å–å¾—
          ServletContext sc = getServletContext();
 
-         //ƒŠƒNƒGƒXƒg‚Ì“]‘—
+         //ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®è»¢é€
          if(carname.length() != 0){
             sc.getRequestDispatcher("/Sample6.jsp")
               .forward(request, response);

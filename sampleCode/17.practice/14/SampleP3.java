@@ -5,7 +5,7 @@ class SampleP3
    public static void main(String[] args)
    {
       if(args.length != 1){
-         System.out.println("ƒtƒ@ƒCƒ‹–¼‚ğ³‚µ‚­w’è‚µ‚Ä‚­‚¾‚³‚¢B");
+         System.out.println("ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æ­£ã—ãæŒ‡å®šã—ã¦ãã ã•ã„ã€‚");
          System.exit(1);
       }
 
@@ -19,7 +19,7 @@ class SampleP3
          pw.close();
       }
       catch(IOException e){
-         System.out.println("“üo—ÍƒGƒ‰[‚Å‚·B");
+         System.out.println("å…¥å‡ºåŠ›ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚");
       }
    }
 }

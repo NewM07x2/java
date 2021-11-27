@@ -11,9 +11,9 @@ public class Sample3 extends Frame
    }
    public Sample3()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
-      bt = new Button("‚æ‚¤‚±‚»B");
+      bt = new Button("ã‚ˆã†ã“ãã€‚");
       add(bt);
 
       addWindowListener(new SampleWindowListener());
@@ -34,7 +34,7 @@ public class Sample3 extends Frame
    {
       public void actionPerformed(ActionEvent e)
       {
-         bt.setLabel("‚±‚ñ‚É‚¿‚ÍB");
+         bt.setLabel("ã“ã‚“ã«ã¡ã¯ã€‚");
       }
    }
 }

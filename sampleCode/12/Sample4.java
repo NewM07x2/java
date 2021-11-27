@@ -1,14 +1,14 @@
-//‚Ì‚è‚à‚ÌƒCƒ“ƒ^[ƒtƒFƒCƒX
+//ã®ã‚Šã‚‚ã®ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹
 interface iVehicle
 {
    void vShow();
 }
-//Ş—¿ƒCƒ“ƒ^[ƒtƒF[ƒX
+//ææ–™ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
 interface iMaterial
 {
    void mShow();
 }
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car implements iVehicle,iMaterial
 {
    private int num;
@@ -18,16 +18,16 @@ class Car implements iVehicle,iMaterial
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[" + num + "ƒKƒ\ƒŠƒ“—Ê" + gas+ "‚ÌÔ‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas+ "ã®è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void vShow()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
    public void mShow()
    {
-      System.out.println("Ô‚ÌŞ¿‚Í“S‚Å‚·B");
+      System.out.println("è»Šã®æè³ªã¯é‰„ã§ã™ã€‚");
    }
 }
 

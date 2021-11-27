@@ -1,4 +1,4 @@
-//ŽÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    private int num;
@@ -8,17 +8,17 @@ class Car
       if(g > 0 && g < 1000){
          num = n;
          gas = g;
-         System.out.println("ƒiƒ“ƒo[‚ð" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ð" + gas + "‚É‚µ‚Ü‚µ‚½B");
+         System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
        }
        else{
-         System.out.println(g + "‚Í³‚µ‚¢ƒKƒ\ƒŠƒ“—Ê‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
-         System.out.println("ƒKƒ\ƒŠƒ“—Ê‚ð•ÏX‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B");
+         System.out.println(g + "ã¯æ­£ã—ã„ã‚¬ã‚½ãƒªãƒ³é‡ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
+         System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚");
        }
    }
    public void show()
    {
-      System.out.println("ŽÔ‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
 }
 
@@ -28,14 +28,14 @@ class Sample2
    {
       Car car1 = new Car();
 
-      //‚±‚Ì‚æ‚¤‚ÈƒAƒNƒZƒX‚Í‚Å‚«‚È‚­‚È‚è‚Ü‚·B
+      //ã“ã®ã‚ˆã†ãªã‚¢ã‚¯ã‚»ã‚¹ã¯ã§ããªããªã‚Šã¾ã™ã€‚
       //car1.num = 1234;
       //car1.gas = -10.0;
 
       car1.setNumGas(1234, 20.5);
       car1.show();
 
-      System.out.println("³‚µ‚­‚È‚¢ƒKƒ\ƒŠƒ“—Êi-10.0j‚ðŽw’è‚µ‚Ä‚Ý‚Ü‚·...B");
+      System.out.println("æ­£ã—ããªã„ã‚¬ã‚½ãƒªãƒ³é‡ï¼ˆ-10.0ï¼‰ã‚’æŒ‡å®šã—ã¦ã¿ã¾ã™...ã€‚");
 
       car1.setNumGas(1234, -10.0);
       car1.show();

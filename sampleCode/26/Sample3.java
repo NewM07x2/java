@@ -19,18 +19,18 @@ public class Sample3 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb1 = new Label("ƒtƒ@ƒCƒ‹‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb1 = new Label("ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠã—ã¦ãã ã•ã„ã€‚");
       lb2 = new Label();
       lb3 = new Label();
       lb4 = new Label();
-      bt = new Button("‘I‘ğ");
+      bt = new Button("é¸æŠ");
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
       VBox vb = new VBox();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       vb.getChildren().add(lb1);
       vb.getChildren().add(lb2);
       vb.getChildren().add(lb3);
@@ -41,21 +41,21 @@ public class Sample3 extends Application
       bp.setBottom(bt);
       bp.setAlignment(bt, Pos.CENTER);
 
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       bt.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
 
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
@@ -63,9 +63,9 @@ public class Sample3 extends Application
          FileChooser fc = new FileChooser();
          File fl = fc.showOpenDialog(new Stage());
          if(fl != null){
-            lb2.setText("ƒtƒ@ƒCƒ‹–¼‚Í" + fl.getName() + "‚Å‚·B");
-            lb3.setText("â‘ÎƒpƒX‚Í" + fl.getAbsolutePath() + "‚Å‚·B");
-            lb4.setText("ƒTƒCƒY‚Í" + fl.length() + "ƒoƒCƒg‚Å‚·B");
+            lb2.setText("ãƒ•ã‚¡ã‚¤ãƒ«åã¯" + fl.getName() + "ã§ã™ã€‚");
+            lb3.setText("çµ¶å¯¾ãƒ‘ã‚¹ã¯" + fl.getAbsolutePath() + "ã§ã™ã€‚");
+            lb4.setText("ã‚µã‚¤ã‚ºã¯" + fl.length() + "ãƒã‚¤ãƒˆã§ã™ã€‚");
          }
       }
    }

@@ -13,7 +13,7 @@ public class Sample5
       TransformerFactory tff = TransformerFactory.newInstance();
       Transformer tf = tff.newTransformer(ss);
       tf.transform(in, out);
-      System.out.println(args[2] + "‚Éo—Í‚µ‚Ü‚µ‚½B");
+      System.out.println(args[2] + "ã«å‡ºåŠ›ã—ã¾ã—ãŸã€‚");
    }
 }
 

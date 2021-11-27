@@ -4,7 +4,7 @@ class SampleP3
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("³•ûŒ`‚Ì•Ó‚Ì’·‚³‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æ­£æ–¹å½¢ã®è¾ºã®é•·ã•ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
        new BufferedReader(new InputStreamReader(System.in));
@@ -13,6 +13,6 @@ class SampleP3
 
       int width = Integer.parseInt(str);
 
-      System.out.println("³•ûŒ`‚Ì–ÊÏ‚Í" + (width * width) + "‚Å‚·B");
+      System.out.println("æ­£æ–¹å½¢ã®é¢ç©ã¯" + (width * width) + "ã§ã™ã€‚");
    }
 }

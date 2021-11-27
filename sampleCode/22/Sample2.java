@@ -19,47 +19,47 @@ public class Sample2 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìì¬
-      lb = new Label("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ä½œæˆ
+      lb = new Label("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
       lv = new ListView<String>();
 
-      //ƒRƒ“ƒgƒ[ƒ‹‚Ìİ’è
+      //ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®è¨­å®š
       ObservableList<String> ol = 
          FXCollections.observableArrayList
-                     ("æ—pÔ", "ƒgƒ‰ƒbƒN", "ƒI[ƒvƒ“ƒJ[",
-                      "ƒ^ƒNƒV[", "ƒXƒ|[ƒcƒJ[", "ƒ~ƒjƒJ[",
-                      "©“]Ô", "O—ÖÔ", "ƒoƒCƒN",
-                      "”òs‹@", "ƒwƒŠƒRƒvƒ^[", "ƒƒPƒbƒg");
+                     ("ä¹—ç”¨è»Š", "ãƒˆãƒ©ãƒƒã‚¯", "ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼",
+                      "ã‚¿ã‚¯ã‚·ãƒ¼", "ã‚¹ãƒãƒ¼ãƒ„ã‚«ãƒ¼", "ãƒŸãƒ‹ã‚«ãƒ¼",
+                      "è‡ªè»¢è»Š", "ä¸‰è¼ªè»Š", "ãƒã‚¤ã‚¯",
+                      "é£›è¡Œæ©Ÿ", "ãƒ˜ãƒªã‚³ãƒ—ã‚¿ãƒ¼", "ãƒ­ã‚±ãƒƒãƒˆ");
       lv.setItems(ol);
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       bp.setTop(lb);
       bp.setCenter(lv);
       
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       lv.getSelectionModel().selectedItemProperty()
            .addListener(new SampleChangeListener());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
       
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleChangeListener implements ChangeListener<String>
    {
       public void changed(ObservableValue ob, String bs, String as)
       {
-         lb.setText(as + "‚Å‚·‚ËB");
+         lb.setText(as + "ã§ã™ã­ã€‚");
       }
    }
 }

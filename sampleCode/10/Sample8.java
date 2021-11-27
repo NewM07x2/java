@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    private int num;
@@ -9,25 +9,25 @@ class Car
    {
       num = 0;
       gas = 0.0;
-      name = "–¼–³‚µ";
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      name = "åç„¡ã—";
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void setCar(int n, double g)
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
    }
    public void setName(String nm)
    {
       name = nm;
-      System.out.println("–¼‘O‚ğ" + name + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("åå‰ã‚’" + name + "ã«ã—ã¾ã—ãŸã€‚");
    }
    public void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
-      System.out.println("–¼‘O‚Í" + name + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
+      System.out.println("åå‰ã¯" + name + "ã§ã™ã€‚");
    }
 }
 
@@ -42,7 +42,7 @@ class Sample8
 
       int number = 1234;
       double gasoline = 20.5;
-      String str = "1†Ô";
+      String str = "1å·è»Š";
 
       car1.setCar(number, gasoline);
       car1.setName(str);

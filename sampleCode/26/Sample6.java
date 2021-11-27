@@ -19,20 +19,20 @@ public class Sample6 extends Application
    }
    public void start(Stage stage)throws Exception
    {
-      //ƒRƒ“ƒ|[ƒlƒ“ƒg‚Ìì¬
-      lb1 = new Label("‰½”Ô–Ú‚Ìƒf[ƒ^‚ğ“Ç‚İ‚İ‚Ü‚·‚©Hi1`5j");
-      lb2 = new Label("ƒf[ƒ^:");
+      //ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã®ä½œæˆ
+      lb1 = new Label("ä½•ç•ªç›®ã®ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã¾ã™ã‹ï¼Ÿï¼ˆ1ã€œ5ï¼‰");
+      lb2 = new Label("ãƒ‡ãƒ¼ã‚¿:");
 
       tf1 = new TextField("1");
       tf2 = new TextField();
 
-      bt = new Button("“Ç");
+      bt = new Button("èª­è¾¼");
 
-      //ƒyƒCƒ“‚Ìì¬
+      //ãƒšã‚¤ãƒ³ã®ä½œæˆ
       BorderPane bp = new BorderPane();
       VBox vb = new VBox();
 
-      //ƒyƒCƒ“‚Ö‚Ì’Ç‰Á
+      //ãƒšã‚¤ãƒ³ã¸ã®è¿½åŠ 
       vb.getChildren().add(lb1);
       vb.getChildren().add(tf1);
       vb.getChildren().add(lb2);
@@ -41,27 +41,27 @@ public class Sample6 extends Application
       bp.setCenter(vb);
       bp.setBottom(bt);
       
-      //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì“o˜^
+      //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç™»éŒ²
       bt.setOnAction(new SampleEventHandler());
 
-      //ƒV[ƒ“‚Ìì¬
+      //ã‚·ãƒ¼ãƒ³ã®ä½œæˆ
       Scene sc = new Scene(bp, 300, 200);
       
-      //ƒXƒe[ƒW‚Ö‚Ì’Ç‰Á
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã¸ã®è¿½åŠ 
       stage.setScene(sc);
 
-      //ƒXƒe[ƒW‚Ì•\¦
-      stage.setTitle("ƒTƒ“ƒvƒ‹");
+      //ã‚¹ãƒ†ãƒ¼ã‚¸ã®è¡¨ç¤º
+      stage.setTitle("ã‚µãƒ³ãƒ—ãƒ«");
       stage.show();
    }
 
-   //ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ƒNƒ‰ƒX
+   //ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã‚¯ãƒ©ã‚¹
    class SampleEventHandler implements EventHandler<ActionEvent>
    {
       public void handle(ActionEvent e)
       {
          FileChooser fc = new FileChooser();
-         fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("ƒoƒCƒiƒŠƒtƒ@ƒCƒ‹", "*.bin"));
+         fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("ãƒã‚¤ãƒŠãƒªãƒ•ã‚¡ã‚¤ãƒ«", "*.bin"));
          File fl = fc.showOpenDialog(new Stage());
          try{
             if(fl != null){

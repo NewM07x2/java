@@ -4,7 +4,7 @@ class Sample11
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("‰½”Ô–Ú‚Ìˆ—‚ğ”ò‚Î‚µ‚Ü‚·‚©Hi1`10j");
+      System.out.println("ä½•ç•ªç›®ã®å‡¦ç†ã‚’é£›ã°ã—ã¾ã™ã‹ï¼Ÿï¼ˆ1ã€œ10ï¼‰");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -15,7 +15,7 @@ class Sample11
       for(int i=1; i<=10; i++){
          if(i == res)
             continue; 
-         System.out.println(i + "”Ô–Ú‚Ìˆ—‚Å‚·B");
+         System.out.println(i + "ç•ªç›®ã®å‡¦ç†ã§ã™ã€‚");
       }
    }
 }

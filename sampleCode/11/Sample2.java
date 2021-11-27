@@ -1,4 +1,4 @@
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    private int num;
@@ -8,27 +8,27 @@ class Car
    {
       num = 0;
       gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public Car(int n, double g)
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[" + num + "ƒKƒ\ƒŠƒ“—Ê" + gas + "‚ÌÔ‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas + "ã®è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void setCar(int n, double g)
    {
       num = n;
       gas = g;
-      System.out.println("ƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
    }
    public void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
 }
-//ƒŒ[ƒVƒ“ƒOƒJ[ƒNƒ‰ƒX
+//ãƒ¬ãƒ¼ã‚·ãƒ³ã‚°ã‚«ãƒ¼ã‚¯ãƒ©ã‚¹
 class RacingCar extends Car
 {
    private int course;
@@ -36,18 +36,18 @@ class RacingCar extends Car
    public RacingCar()
    {
       course = 0;
-      System.out.println("ƒŒ[ƒVƒ“ƒOƒJ[‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ãƒ¬ãƒ¼ã‚·ãƒ³ã‚°ã‚«ãƒ¼ã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public RacingCar(int n, double g, int c)
    {
       super(n, g);
       course = c;
-      System.out.println("ƒR[ƒX”Ô†" + course + "‚ÌƒŒ[ƒVƒ“ƒOƒJ[‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("ã‚³ãƒ¼ã‚¹ç•ªå·" + course + "ã®ãƒ¬ãƒ¼ã‚·ãƒ³ã‚°ã‚«ãƒ¼ã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void setCourse(int c)
    {
       course = c;
-      System.out.println("ƒR[ƒX”Ô†‚ğ" + course + "‚É‚µ‚Ü‚µ‚½B");
+      System.out.println("ã‚³ãƒ¼ã‚¹ç•ªå·ã‚’" + course + "ã«ã—ã¾ã—ãŸã€‚");
    }
 }
 

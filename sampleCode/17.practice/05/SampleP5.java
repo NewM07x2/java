@@ -4,7 +4,7 @@ class SampleP5
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("¬Ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æˆç¸¾ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
@@ -14,19 +14,19 @@ class SampleP5
 
       switch(res){
          case 1:
-            System.out.println("‚à‚Á‚Æ‚ª‚ñ‚Î‚è‚Ü‚µ‚å‚¤B");
+            System.out.println("ã‚‚ã£ã¨ãŒã‚“ã°ã‚Šã¾ã—ã‚‡ã†ã€‚");
             break;
          case 2:
-            System.out.println("‚à‚¤­‚µ‚ª‚ñ‚Î‚è‚Ü‚µ‚å‚¤B");
+            System.out.println("ã‚‚ã†å°‘ã—ãŒã‚“ã°ã‚Šã¾ã—ã‚‡ã†ã€‚");
             break;
          case 3:
-            System.out.println("‚³‚ç‚Éã‚ğ‚ß‚´‚µ‚Ü‚µ‚å‚¤B");
+            System.out.println("ã•ã‚‰ã«ä¸Šã‚’ã‚ã–ã—ã¾ã—ã‚‡ã†ã€‚");
             break;
          case 4:
-            System.out.println("‚½‚¢‚Ö‚ñ‚æ‚­‚Å‚«‚Ü‚µ‚½B");
+            System.out.println("ãŸã„ã¸ã‚“ã‚ˆãã§ãã¾ã—ãŸã€‚");
             break;
          case 5:
-            System.out.println("‚½‚¢‚Ö‚ñ—DG‚Å‚·B");
+            System.out.println("ãŸã„ã¸ã‚“å„ªç§€ã§ã™ã€‚");
             break;
       }
    }

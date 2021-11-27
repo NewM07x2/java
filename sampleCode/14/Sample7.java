@@ -10,12 +10,12 @@ class Sample7
          
          pw.println("Hello!");
          pw.println("GoodBye!");
-         System.out.println("ƒtƒ@ƒCƒ‹‚É‘‚«‚±‚İ‚Ü‚µ‚½B");
+         System.out.println("ãƒ•ã‚¡ã‚¤ãƒ«ã«æ›¸ãã“ã¿ã¾ã—ãŸã€‚");
 
          pw.close();
       }
       catch(IOException e){
-         System.out.println("“üo—ÍƒGƒ‰[‚Å‚·B");
+         System.out.println("å…¥å‡ºåŠ›ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚");
       }
    }
 }

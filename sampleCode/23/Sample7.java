@@ -10,16 +10,16 @@ public class Sample7 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒv‚Ìİ’è
+         //ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒ—ã®è¨­å®š
          response.setContentType("text/html; charset=UTF-8");
 
-         //HTML•¶‘‚Ì‘‚«o‚µ
+         //HTMLæ–‡æ›¸ã®æ›¸ãå‡ºã—
          PrintWriter pw = response.getWriter();
-         pw.println("‚¨‘I‚Ñ‚­‚¾‚³‚¢B<br/>\n" +
+         pw.println("ãŠé¸ã³ãã ã•ã„ã€‚<br/>\n" +
                     "<br/>\n" +
-                    "<a href=\"../car1.html\">æ—pÔ</a><br/>\n" +
-                    "<a href=\"../car2.html\">ƒgƒ‰ƒbƒN</a><br/>\n" +
-                    "<a href=\"../car3.html\">ƒI[ƒvƒ“ƒJ[</a><br/>\n");
+                    "<a href=\"../car1.html\">ä¹—ç”¨è»Š</a><br/>\n" +
+                    "<a href=\"../car2.html\">ãƒˆãƒ©ãƒƒã‚¯</a><br/>\n" +
+                    "<a href=\"../car3.html\">ã‚ªãƒ¼ãƒ—ãƒ³ã‚«ãƒ¼</a><br/>\n");
        }
        catch(Exception e){    
           e.printStackTrace();

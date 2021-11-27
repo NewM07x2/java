@@ -2,12 +2,12 @@ class A
 {
    A()
    {
-      System.out.println("引数0のコンストラクタです。");
+      System.out.println("蠑墓焚0縺ｮ繧ｳ繝ｳ繧ｹ繝医Λ繧ｯ繧ｿ縺ｧ縺吶�");
    }
    A(int a)
    {
       this();
-      System.out.println("引数1のコンストラクタです。");
+      System.out.println("蠑墓焚1縺ｮ繧ｳ繝ｳ繧ｹ繝医Λ繧ｯ繧ｿ縺ｧ縺吶�");
    }
 }
 class SampleP4

@@ -5,32 +5,32 @@ public class SampleP1
    public static void main(String[] args)
    {
       try{
-         //Ú‘±‚Ì€”õ
+         //æ¥ç¶šã®æº–å‚™
          String url = "jdbc:derby:fooddb;create=true";
          String usr = "";
          String pw = "";
 
-         //ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±
+         //ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¸ã®æ¥ç¶š
          Connection cn = DriverManager.getConnection(url, usr, pw);
 
-         //–â‚¢‡‚í‚¹‚Ì€”õ
+         //å•ã„åˆã‚ã›ã®æº–å‚™
          DatabaseMetaData dm = cn.getMetaData();
-         ResultSet tb = dm.getTables(null, null, "‰Ê•¨•\", null);
+         ResultSet tb = dm.getTables(null, null, "æœç‰©è¡¨", null);
 
          Statement st = cn.createStatement();
 
-         String qry1 = "CREATE TABLE ‰Ê•¨•\(”Ô† int, –¼‘O varchar(50), æˆµ“X varchar(50))";
-         String[] qry2 = {"INSERT INTO ‰Ê•¨•\ VALUES (1,'‚İ‚©‚ñ','ÂR¤“X')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (2,'‚è‚ñ‚²','“Œ‹sê')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (3,'ƒoƒiƒi','—é–Ø‰İ•¨')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (4,'‚¢‚¿‚²','“Œ‹sê')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (5,'‚È‚µ','ÂR¤“X')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (6,'ŒI','‰¡•lƒfƒp[ƒg')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (7,'ƒ‚ƒ‚','‰¡•lƒfƒp[ƒg')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (8,'‚Ñ‚í','²“¡¤“X')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (9,'Š`','ÂR¤“X')",
-                          "INSERT INTO ‰Ê•¨•\ VALUES (10,'ƒXƒCƒJ','“Œ‹sê')"};
-         String qry3 = "SELECT * FROM ‰Ê•¨•\";
+         String qry1 = "CREATE TABLE æœç‰©è¡¨(ç•ªå· int, åå‰ varchar(50), å–æ‰±åº— varchar(50))";
+         String[] qry2 = {"INSERT INTO æœç‰©è¡¨ VALUES (1,'ã¿ã‹ã‚“','é’å±±å•†åº—')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (2,'ã‚Šã‚“ã”','æ±äº¬å¸‚å ´')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (3,'ãƒãƒŠãƒŠ','éˆ´æœ¨è²¨ç‰©')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (4,'ã„ã¡ã”','æ±äº¬å¸‚å ´')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (5,'ãªã—','é’å±±å•†åº—')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (6,'æ —','æ¨ªæµœãƒ‡ãƒ‘ãƒ¼ãƒˆ')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (7,'ãƒ¢ãƒ¢','æ¨ªæµœãƒ‡ãƒ‘ãƒ¼ãƒˆ')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (8,'ã³ã‚','ä½è—¤å•†åº—')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (9,'æŸ¿','é’å±±å•†åº—')",
+                          "INSERT INTO æœç‰©è¡¨ VALUES (10,'ã‚¹ã‚¤ã‚«','æ±äº¬å¸‚å ´')"};
+         String qry3 = "SELECT * FROM æœç‰©è¡¨";
 
          if(!tb.next()){
             st.executeUpdate(qry1);
@@ -39,10 +39,10 @@ public class SampleP1
             }
          }
 
-         //–â‚¢‡‚í‚¹
+         //å•ã„åˆã‚ã›
          ResultSet rs = st.executeQuery(qry3);
 
-         //ƒf[ƒ^‚Ìæ“¾
+         //ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          ResultSetMetaData rm = rs.getMetaData();
          int cnum = rm.getColumnCount();
          while(rs.next()){
@@ -52,7 +52,7 @@ public class SampleP1
             System.out.println("");
          }
 
-         //Ú‘±‚ÌƒNƒ[ƒY
+         //æ¥ç¶šã®ã‚¯ãƒ­ãƒ¼ã‚º
          rs.close();
          st.close();
          cn.close();

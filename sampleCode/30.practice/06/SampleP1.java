@@ -9,29 +9,29 @@ public class SampleP1 extends HttpServlet
    throws ServletException
    {
       try{
-         //ƒtƒH[ƒ€ƒf[ƒ^‚Ìæ“¾
+         //ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
          String name = request.getParameter("name");
 
-         //ƒRƒ“ƒeƒ“ƒcƒ^ƒCƒv‚Ìİ’è
+         //ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚¿ã‚¤ãƒ—ã®è¨­å®š
          response.setContentType("text/html; charset=UTF-8");
 
-         //HTML•¶‘‚Ì‘‚«o‚µ
+         //HTMLæ–‡æ›¸ã®æ›¸ãå‡ºã—
          PrintWriter pw = response.getWriter();
          if(name.length() != 0){
             pw.println("<!DOCTYPE html><html>\n" +
                        "<head><title>\n" + name + "</title></head>\n" +
                        "<body><div style=\"text-align: center;\">\n" +
-                       "<h2>‚æ‚¤‚±‚»</h2>\n" +
-                       name + "‚³‚ñA‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B<br/>\n" +
+                       "<h2>ã‚ˆã†ã“ã</h2>\n" +
+                       name + "ã•ã‚“ã€ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚<br/>\n" +
                        "</div></body>\n" +
                       "</html>\n");
           }
           else{
              pw.println("<html>\n" +
-                        "<head><title>ƒGƒ‰[</title></head>\n" +
+                        "<head><title>ã‚¨ãƒ©ãƒ¼</title></head>\n" +
                         "<body><div style=\"text-align: center;\">\n" +
-                        "<h2>ƒGƒ‰[</h2>\n" +
-                        "“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B<br/>\n" +
+                        "<h2>ã‚¨ãƒ©ãƒ¼</h2>\n" +
+                        "å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚<br/>\n" +
                         "</div></body>\n" +
                         "</html>\n");
           }

@@ -4,14 +4,14 @@ class SampleP3
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("•¶š—ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("æ–‡å­—åˆ—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       BufferedReader br =
        new BufferedReader(new InputStreamReader(System.in));
 
       String str1 = br.readLine();
 
-      System.out.println("a‚Ì‘}“üˆÊ’u‚ğ®”‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
+      System.out.println("aã®æŒ¿å…¥ä½ç½®ã‚’æ•´æ•°ã§å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
 
       String str2 = br.readLine();
       int num = Integer.parseInt(str2);
@@ -19,6 +19,6 @@ class SampleP3
       StringBuffer str3 = new StringBuffer(str1);
       str3.insert(num, 'a');
 
-      System.out.println(str3 + "‚É‚È‚è‚Ü‚µ‚½B");
+      System.out.println(str3 + "ã«ãªã‚Šã¾ã—ãŸã€‚");
    }
 }
