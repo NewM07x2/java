@@ -1,6 +1,6 @@
 import java.io.*;
 
-class Sample9
+class Test
 {
    public static void main(String[] args) throws IOException
    {
@@ -8,7 +8,7 @@ class Sample9
                 new BufferedReader(new InputStreamReader(System.in));
 
       int[] test = new int[5];
-      System.out.println(test.length + "äººã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚");
+      System.out.println(test.length + "l‚Ì“_”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
 
       for(int i=0; i<test.length; i++){
          String str = br.readLine();
@@ -16,7 +16,7 @@ class Sample9
       }
 
       for(int s=0; s<test.length-1; s++){
-         for(int t=s+1; t<test.length; t++){ã€€ã€€
+         for(int t=s+1; t<test.length; t++){
             if(test[t] > test[s]){
                int tmp = test[t];
                test[t] = test[s];
@@ -26,7 +26,7 @@ class Sample9
       }
 
       for(int j=0; j<test.length; j++){
-         System.out.println( (j+1) + "ç•ªç›®ã®äººã®ç‚¹æ•°ã¯" + test[j] + "ã§ã™ã€‚");
+         System.out.println( (j+1) + "”Ô–Ú‚Ìl‚Ì“_”‚Í" + test[j] + "‚Å‚·B");
       }
    }
 }
