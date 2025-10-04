@@ -1,0 +1,16 @@
+services:
+  db:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=testdb'
+      - 'POSTGRES_PASSWORD=secret'
+    ports:
+      - '5432'
+
+  app:
+    # ステップ 5-1 でビルドしたDockerイメージ名を使用
+    # プロジェクト名が 'demo'、バージョンが '0.0.1-SNAPSHOT' の場合
+    image: 'demo:0.0.1-SNAPSHOT'
+    ports:
+      # アプリケーションのポートをホストの8080にマッピング
+      - '8080:8080'
